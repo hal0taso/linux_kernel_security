@@ -1,6 +1,7 @@
 #include <linux/module.h>
 #include <linux/mutex.h>
 #include <linux/kernel.h>
+#include <linux/errno.h>
 
 //static struct mutex *lock;
 DEFINE_MUTEX(lock);
@@ -9,11 +10,15 @@ int step2_init(void)
 {
   printk(KERN_ALERT "step2 LOADED.\n");
 
-  mutex_lock_killable(&lock);
+  if(mutex_lock_killable(&lock)) {
+    return -EINTR;
+  }
   printk(KERN_ALERT "mutex is LOCKED.\n");
 
   printk(KERN_ALERT "Try to lock mutex again.\n");
-  mutex_lock_killable(&lock);
+  if (mutex_lock_killable(&lock)) {
+    return -EINTR;
+  }
 
   mutex_unlock(&lock);
   mutex_unlock(&lock);
