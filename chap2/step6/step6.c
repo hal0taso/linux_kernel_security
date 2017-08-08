@@ -8,6 +8,7 @@
 
 MODULE_LICENSE("GPL v2");
 
+
 void mset(char *buf, size_t size)
 {
   int i;
@@ -21,10 +22,19 @@ int step6_init(void)
 {
   int size = 4096;
   int i;
+  int j = 1;
   char *ptr;
   
   printk(KERN_ALERT "step6 LOAD\n");
-
+  while(1){
+    ptr = kmalloc(size*j, GFP_ATOMIC);
+    if(ptr == NULL){
+      break;
+    }
+    mset(ptr, size*j);
+    printk("[%p] %d size memory allocated.\n", ptr, size);      
+    kfree(ptr);
+  }
   for(i = 10; i > 0; i --){
     while(1){
       ptr = kmalloc(size, GFP_ATOMIC);
@@ -33,7 +43,7 @@ int step6_init(void)
         break;
       }
       mset(ptr, size);
-      printk("[%p] kmalloc allocated.\n", ptr);
+      printk("[%p] %d size memory allocated.\n", ptr, size);
     }
     size /= 2;
   }
