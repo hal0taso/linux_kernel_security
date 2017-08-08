@@ -3,7 +3,7 @@
 
 int step4_init(void)
 {
-  printk(KERN_ALERT "step3 LOADING.\n");
+  printk(KERN_ALERT "step4 LOADING.\n");
   int a = 10;
   int b = 0;
   printk("a is %d\n", a);
