@@ -68,4 +68,6 @@ dmesgは何も変化なし。　
 
 ## /proc/sys/kernel/panic_on_oops=1で実行
 
+一応`/proc/sys/kernel/panic_on_oops`を60に設定して実行。
+
 
