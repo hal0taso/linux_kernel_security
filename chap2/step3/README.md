@@ -68,6 +68,6 @@ dmesgは何も変化なし。　
 
 ## /proc/sys/kernel/panic_on_oops=1で実行
 
-一応`/proc/sys/kernel/panic_on_oops`を60に設定して実行。
+一応`/proc/sys/kernel/panic`を60に設定して実行。
 
 システムがハングアップした。60秒くらいしてから再起動した。
