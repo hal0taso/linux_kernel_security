@@ -3,6 +3,7 @@
 
 static int step21_init(void)
 {
+  printk(KERN_ALERT "step21 loaded.\n");
   while(1){
     printk(KERN_ALERT "Running...\n");
   }
