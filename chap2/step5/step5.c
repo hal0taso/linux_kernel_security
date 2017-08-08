@@ -13,7 +13,7 @@ int rstack(int n)
 {
   char buf[SIZE];
   int i;
-  if(n < 1){
+  if(n > 1){
     for(i = 0; i < SIZE; i ++ ){
       buf[i] = (char)0;
     }
