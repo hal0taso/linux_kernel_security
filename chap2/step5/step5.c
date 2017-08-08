@@ -26,7 +26,7 @@ int rstack(int n)
 
 int step5_init(void)
 {
-  int n = 12;
+  int n = 15;
   int ret;
   
   printk(KERN_ALERT "step5 LOADED.\n");
