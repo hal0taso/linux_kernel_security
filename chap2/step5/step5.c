@@ -18,7 +18,7 @@ int rstack(int n)
       buf[i] = (char)0;
     }
     n --;
-    int rstack(n);
+    rstack(n);
   }
   printk("[%p] finished initialized buf.\n", &buf);
   return 0;
