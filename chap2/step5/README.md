@@ -64,4 +64,34 @@
  
  ちょっと編集しながら見てみる。
 
-## 
+## 992バイトずつ書き込んだとき
+
+14回のループを実行できた。
+それぞれのbufのアドレスは0x400 = 1024バイトずつ変化するように実験した。
+15回目のループはカーネルパニックが発生した。
+
+```
+[   41.734773] step5 LOADED.
+[   41.734787] [ffffb912c05b84a0] finished initialized buf.
+[   41.734788] [ffffb912c05b88a0] finished initialized buf.
+[   41.734789] [ffffb912c05b8ca0] finished initialized buf.
+[   41.734789] [ffffb912c05b90a0] finished initialized buf.
+[   41.734790] [ffffb912c05b94a0] finished initialized buf.
+[   41.734790] [ffffb912c05b98a0] finished initialized buf.
+[   41.734791] [ffffb912c05b9ca0] finished initialized buf.
+[   41.734792] [ffffb912c05ba0a0] finished initialized buf.
+[   41.734792] [ffffb912c05ba4a0] finished initialized buf.
+[   41.734793] [ffffb912c05ba8a0] finished initialized buf.
+[   41.734793] [ffffb912c05baca0] finished initialized buf.
+[   41.734794] [ffffb912c05bb0a0] finished initialized buf.
+[   41.734795] [ffffb912c05bb4a0] finished initialized buf.
+[   41.734795] [ffffb912c05bb8a0] finished initialized buf.
+```
+
+1024 * 14 = 14336 = 0x3800バイト
+
+1ページは4KB = 0x1000なので、14.336KBのスタック領域を使えている。
+
+v4.11のカーネルを使っているので、16KBつかえるはず。
+
+いい感じにつかえたかなぁ...?
