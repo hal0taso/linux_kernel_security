@@ -1,4 +1,6 @@
-# 2-1 mutex_lockによるデッドロック
+# 2-1 
+
+## mutex_lockによるデッドロック
 
 ```
 $ make
@@ -25,3 +27,6 @@ $ dmesg | grep step2 -A 3
 
 2度目のロックができずデッドロックになっている？？
 
+KILLを送ってもプロセスが終了しない。
+
+## mutex\_lock_killableをつかう
