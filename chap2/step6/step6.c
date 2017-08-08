@@ -25,7 +25,7 @@ int step6_init(void)
   
   printk(KERN_ALERT "step6 LOAD\n");
 
-  for(i = 10; i < 0; i --){
+  for(i = 10; i > 0; i --){
     while(1){
       ptr = kmalloc(size, GFP_ATOMIC);
       if(ptr == NULL){
