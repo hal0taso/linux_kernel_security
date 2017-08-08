@@ -1,27 +1,31 @@
 #include <linux/module.h>
 #include <linux/mutex.h>
-#include <pthread.h>
+#include <linux/kthread.h>
 
 #define LOOP 0x100
 
-static pthread_mutex_t mtx1 = PTHREAD_MUTEX_INITIALIZER;
-static pthread_mutex_t mtx2 = PTHREAD_MUTEX_INITIALIZER;
+DEFINE_MUTEX(mtx1);
+DEFINE_MUTEX(mtx2);
 
 static int cnt;
 
-void f1(void);
-void f2(void);
+int f1(void);
+int f2(void);
+
+static struct task_struct *kthread_tsk;
+
+
 
 static int step22_init(void)
 {
 
   printk(KERN_ALERT "step2 LOADED\n");
   
-  pthread thread1, thread2;
+  task_struct tk1, tk2;
   int ret1, ret2;
 
-  ret1 = pthread_create(&thread1, NULL, (void *)f1, NULL);
-  ret2 = pthread_create(&thread2, NULL, (void *)f2, NULL);
+  tk1 = kthread_create((void *)f1, NULL, NULL);
+  tk2 = kthread_create((void *)f2, NULL, NULL);
 
   /*
    * カーネル内のエラー処理ってどうなってるんだ...
@@ -34,17 +38,19 @@ static int step22_init(void)
     printk(KERN_ALERT "Error: can not create thread2\n");
   }
 
+  /*
   printk(KERN_ALERT "Execute pthread_join thread1\n");
-  ret1 = pthread_join(thread1, NULL);
+    ret1 = pthread_join(thread1, NULL);
   if(ret1 != 0){
     printk(KERN_ALERT "Error: can not join thred1\n");
   }
 
   printk(KERN_ALERT "Execute pthread_join thread2\n");
-  ret2 = pthread_join(thread2, NULL);
+    ret2 = pthread_join(thread2, NULL);
   if(ret2 != 0){
     printk(KERN_ALERT "Error: can not join thred2\n");
   }
+  */
 
   
   printk(KERN_ALERT "cnt: %d\n", cnt);
@@ -53,28 +59,29 @@ static int step22_init(void)
 }
 
 
-static int step22_exit(void)
+static void step22_exit(void)
 {
   printk(KERN_ALERT "Step2 Unloaded.\n");
 }
 
 int f1(void)
 {
+  int i;
   printk(KERN_ALERT "mtx1 LOCKING....\n");
-  pthread_mutex_lock(&mtx1);
+  mutex_lock(&mtx1);
   printk(KERN_ALERT "mtx1 LOCKED.\n");
-  for( int i; i < LOOP; i ++){
-    cnt += 1
+  for (i = 0; i < LOOP; i ++){
+    cnt += 1;
   }
 
   printk(KERN_ALERT "mtx2 LOCKING....\n");
-  pthread_mutex_lock(&mtx2);
+  mutex_lock(&mtx2);
   printk(KERN_ALERT "mtx2 LOCKED.\n");
 
-  pthread_mutex_unlock(&mtx1);
+  mutex_unlock(&mtx1);
   printk(KERN_ALERT "mtx1 UNLOCKED\n");
 
-  pthread_mutex_unlock(&mtx2);
+  mutex_unlock(&mtx2);
   printk(KERN_ALERT "mtx2 UNLOCKED\n");
 
   return cnt;
@@ -82,22 +89,23 @@ int f1(void)
 
 int f2(void)
 {
+  int i;
   printk(KERN_ALERT "mtx2 LOCKING....\n");  
-  pthread_mutex_lock(&mtx2);
+  mutex_lock(&mtx2);
   printk(KERN_ALERT "mtx2 LOCKED.\n");
 
-  for( int i; i < LOOP; i ++){
-    cnt += 1
+  for (i = 0; i < LOOP; i ++){
+    cnt += 1;
   }
   
   printk(KERN_ALERT "mtx1 LOCKING....\n");  
-  pthread_mutex_lock(&mtx1);
+  mutex_lock(&mtx1);
   printk(KERN_ALERT "mtx1 LOCKED.\n");
 
-  pthread_mutex_unlock(&mtx2);
+  mutex_unlock(&mtx2);
   printk(KERN_ALERT "mtx2 UNLOCKED\n");
 
-  pthread_mutex_unlock(&mtx1);
+  mutex_unlock(&mtx1);
   printk(KERN_ALERT "mtx1 UNLOCKED\n");
 
   return cnt;

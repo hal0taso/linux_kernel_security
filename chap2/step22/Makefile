@@ -1,4 +1,4 @@
-obj-m := step22.o
+obj-m := step2_mutex.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
