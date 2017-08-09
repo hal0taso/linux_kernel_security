@@ -14,7 +14,7 @@ void mset(char *buf, size_t size)
   int i;
   for(i = 0; i < size; i ++){
     *buf = 0UL;
-    buf += ;
+    buf += sizeof(unsigned long);
   }
 }
 
@@ -50,7 +50,7 @@ int step6_init(void)
         printk("break\n");
         break;
       }
-      a_ptr[i] = (unsigned long long int) ptr
+      a_ptr[i] = (unsigned long long int) ptr;
       mset(ptr, size);
       printk("[%p] %d size memory allocated.\n", ptr, size);
     }
