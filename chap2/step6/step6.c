@@ -12,7 +12,7 @@
 
 MODULE_LICENSE("GPL v2");
 
-#define PAGESIZE 8192
+#define PAGESIZE 4092
 
 void mset(char *buf, size_t size)
 {
@@ -26,24 +26,26 @@ void mset(char *buf, size_t size)
 int step6_init(void)
 {
   int size = PAGESIZE;
-  void *ptr;
-  unsigned long long int a_ptr[32];
+  unsigned long long int a_ptr[33];
   int i;
   
   printk(KERN_ALERT "step6 LOAD\n");
   for(i = 0; i < 32; i ++){
-    a_ptr[i] = (unsigned long long int)kmalloc(size, GFP_ATOMIC);
+    a_ptr[i] = (unsigned long long int)kmalloc(size, GFP_KERNEL);
     if(a_ptr[i] == 0){
       printk("break\n");
       break;
     }
     mset((void *)a_ptr[i], size);
-    printk("[%p] %d byte memory allocated.\n", (void *)a_ptr[i], size);       
+    printk("[%p] %d byte memory allocated(a_ptr[%d])\n", (void *)a_ptr[i], size, i);
+    kfree((void *)a_ptr[i]);
+    size *= 2;
   }
-
+  /*
   for(i = 0; i < 32; i ++){
     kfree((void *)a_ptr[i]);  
   }
+  */
   return 0;
 }
 

@@ -1,0 +1,13 @@
+[  164.691196] step6 LOAD
+[  164.691201] [ffffa0c1df62a000] 4092 byte memory allocated(a_ptr[0])
+[  164.691202] [ffffa0c1fa95c000] 8184 byte memory allocated(a_ptr[1])
+[  164.691206] [ffffa0c1df514000] 16368 byte memory allocated(a_ptr[2])
+[  164.691210] [ffffa0c1df5f0000] 32736 byte memory allocated(a_ptr[3])
+[  164.691217] [ffffa0c1df660000] 65472 byte memory allocated(a_ptr[4])
+[  164.691230] [ffffa0c1df780000] 130944 byte memory allocated(a_ptr[5])
+[  164.691256] [ffffa0c1d2c00000] 261888 byte memory allocated(a_ptr[6])
+[  164.691300] [ffffa0c1d2c00000] 523776 byte memory allocated(a_ptr[7])
+[  164.691391] [ffffa0c1d2c00000] 1047552 byte memory allocated(a_ptr[8])
+[  164.691646] [ffffa0c1d2c00000] 2095104 byte memory allocated(a_ptr[9])
+[  164.692239] [ffffa0c1d2c00000] 4190208 byte memory allocated(a_ptr[10])
+[  164.692250] break
