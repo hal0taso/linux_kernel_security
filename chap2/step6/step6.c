@@ -1,11 +1,3 @@
-/*
-  allocating memory dinamicaly by using kmalloc.
-
-  kmalloc(8192);
-  --> slabinfo 見ると4つまでallocateできそう -> 32個allocateできた
-  kmalloc(4096); --> いける
-*/
-
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/slab.h>
