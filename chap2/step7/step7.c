@@ -17,11 +17,11 @@ void mset(char *buf, size_t size)
 
 int step7_init(void)
 {
-  int size = PAGESIZE * 2;
+  int size = PAGESIZE * 4;
   void *ptr;
   
   printk(KERN_ALERT "step7 LOAD\n");
-  for(;;){
+  while(1){
     ptr = kmalloc(size, GFP_KERNEL);
     if(ptr == NULL){
       printk("break\n");
