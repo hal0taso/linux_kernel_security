@@ -1,0 +1,1572 @@
+[    0.000000] Linux version 4.11.12-200.fc25.x86_64 (mockbuild@bkernel01.phx2.fedoraproject.org) (gcc version 6.3.1 20161221 (Red Hat 6.3.1-1) (GCC) ) #1 SMP Fri Jul 21 16:41:43 UTC 2017
+[    0.000000] Command line: BOOT_IMAGE=/vmlinuz-4.11.12-200.fc25.x86_64 root=/dev/mapper/fedora-root ro rd.lvm.lv=fedora/root rd.lvm.lv=fedora/swap rhgb quiet LANG=en_US.UTF-8
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffeffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.5 present.
+[    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] e820: last_pfn = 0x7fff0 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR variable ranges disabled:
+[    0.000000] MTRR: Disabled
+[    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] found SMP MP-table at [mem 0x0009fff0-0x0009ffff] mapped at [ffff9c8c0009fff0]
+[    0.000000] Base memory trampoline at [ffff9c8c00099000] 99000 size 24576
+[    0.000000] BRK [0x56386000, 0x56386fff] PGTABLE
+[    0.000000] BRK [0x56387000, 0x56387fff] PGTABLE
+[    0.000000] BRK [0x56388000, 0x56388fff] PGTABLE
+[    0.000000] BRK [0x56389000, 0x56389fff] PGTABLE
+[    0.000000] BRK [0x5638a000, 0x5638afff] PGTABLE
+[    0.000000] BRK [0x5638b000, 0x5638bfff] PGTABLE
+[    0.000000] RAMDISK: [mem 0x35bd6000-0x36de2fff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+[    0.000000] ACPI: XSDT 0x000000007FFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    0.000000] ACPI: FACP 0x000000007FFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    0.000000] ACPI: DSDT 0x000000007FFF0470 0021C8 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 0x000000007FFF0200 000040
+[    0.000000] ACPI: FACS 0x000000007FFF0200 000040
+[    0.000000] ACPI: APIC 0x000000007FFF0240 00005C (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[    0.000000] ACPI: SSDT 0x000000007FFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000007ffeffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x7ffc5000-0x7ffeffff]
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: cpu 0, msr 0:7ff45001, primary cpu clock
+[    0.000000] kvm-clock: using sched offset of 4732379400 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x000000007ffeffff]
+[    0.000000]   Normal   empty
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x000000007ffeffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000007ffeffff]
+[    0.000000] On node 0 totalpages: 524174
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 21 pages reserved
+[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 8128 pages used for memmap
+[    0.000000]   DMA32 zone: 520176 pages, LIFO batch:31
+[    0.000000] ACPI: PM-Timer IO Port: 0x4008
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] e820: [mem 0x80000000-0xfebfffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] percpu: Embedded 36 pages/cpu @ffff9c8c7fc00000 s108952 r8192 d30312 u1048576
+[    0.000000] pcpu-alloc: s108952 r8192 d30312 u1048576 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 515961
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: BOOT_IMAGE=/vmlinuz-4.11.12-200.fc25.x86_64 root=/dev/mapper/fedora-root ro rd.lvm.lv=fedora/root rd.lvm.lv=fedora/swap rhgb quiet LANG=en_US.UTF-8
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Memory: 2024288K/2096696K available (8702K kernel code, 1668K rwdata, 3604K rodata, 2124K init, 1816K bss, 72408K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.001000] Hierarchical RCU implementation.
+[    0.001000] 	Build-time adjustment of leaf fanout to 64.
+[    0.001000] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+[    0.001000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=2
+[    0.001000] NR_IRQS:524544 nr_irqs:440 16
+[    0.001000] 	Offload RCU callbacks from all CPUs
+[    0.001000] 	Offload RCU callbacks from CPUs: 0-1.
+[    0.001000] Console: colour VGA+ 80x25
+[    0.001000] console [tty0] enabled
+[    0.001000] tsc: Detected 2299.998 MHz processor
+[    0.001000] Calibrating delay loop (skipped) preset value.. 4599.99 BogoMIPS (lpj=2299998)
+[    0.001000] pid_max: default: 32768 minimum: 301
+[    0.001000] ACPI: Core revision 20170119
+[    0.001000] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    0.001000] Security Framework initialized
+[    0.001000] Yama: becoming mindful.
+[    0.001000] SELinux:  Initializing.
+[    0.001000] SELinux:  Starting in permissive mode
+[    0.001000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.001000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.001000] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.001000] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.002120] CPU: Physical Processor ID: 0
+[    0.002120] CPU: Processor Core ID: 0
+[    0.002134] mce: CPU supports 0 MCE banks
+[    0.002155] Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+[    0.002155] Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+[    0.002263] Freeing SMP alternatives memory: 32K
+[    0.003017] ftrace: allocating 31963 entries in 125 pages
+[    0.012077] smpboot: Max logical packages: 1
+[    0.012342] x2apic enabled
+[    0.012540] Switched APIC routing to physical x2apic.
+[    0.013711] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.015000] smpboot: CPU0: Intel(R) Core(TM) i7-4650U CPU @ 1.70GHz (family: 0x6, model: 0x45, stepping: 0x1)
+[    0.015000] Performance Events: unsupported p6 CPU model 69 no PMU driver, software events only.
+[    0.015000] smp: Bringing up secondary CPUs ...
+[    0.015000] x86: Booting SMP configuration:
+[    0.015000] .... node  #0, CPUs:      #1
+[    0.001000] kvm-clock: cpu 1, msr 0:7ff45041, secondary cpu clock
+[    0.001000] mce: CPU supports 0 MCE banks
+[    0.017024] smp: Brought up 1 node, 2 CPUs
+[    0.017024] smpboot: Total of 2 processors activated (9199.99 BogoMIPS)
+[    0.017201] sched_clock: Marking stable (17000000, 0)->(179400338, -162400338)
+[    0.017817] devtmpfs: initialized
+[    0.017862] x86/mm: Memory block size: 128MB
+[    0.019492] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.019497] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.019548] pinctrl core: initialized pinctrl subsystem
+[    0.019582] RTC time: 11:07:59, date: 08/09/17
+[    0.019741] NET: Registered protocol family 16
+[    0.019987] cpuidle: using governor menu
+[    0.019989] PCCT header not found.
+[    0.020026] ACPI: bus type PCI registered
+[    0.020027] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.020109] PCI: Using configuration type 1 for base access
+[    0.022684] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.023244] ACPI: Added _OSI(Module Device)
+[    0.023244] ACPI: Added _OSI(Processor Device)
+[    0.023245] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.023246] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.023541] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.025332] ACPI: Interpreter enabled
+[    0.025341] ACPI: (supports S0 S5)
+[    0.025342] ACPI: Using IOAPIC for interrupt routing
+[    0.025453] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.030058] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.030062] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.030066] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[    0.030072] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.030375] PCI host bridge to bus 0000:00
+[    0.030377] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.030378] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.030379] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.030380] pci_bus 0000:00: root bus resource [mem 0x80000000-0xffdfffff window]
+[    0.030382] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.030428] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    0.030889] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    0.031399] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+[    0.031709] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+[    0.031894] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.031895] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.031896] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.031896] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.032070] pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+[    0.033704] pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe1ffffff pref]
+[    0.043425] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+[    0.044704] pci 0000:00:03.0: reg 0x10: [mem 0xf0000000-0xf001ffff]
+[    0.047045] pci 0000:00:03.0: reg 0x18: [io  0xd010-0xd017]
+[    0.052536] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+[    0.053706] pci 0000:00:04.0: reg 0x10: [io  0xd020-0xd03f]
+[    0.054824] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+[    0.055918] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+[    0.060600] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+[    0.060679] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+[    0.060733] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+[    0.061281] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+[    0.062479] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+[    0.069722] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+[    0.070093] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    0.070101] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    0.070344] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+[    0.071539] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+[    0.073934] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+[    0.076345] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+[    0.077472] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+[    0.080320] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    0.080573] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 10 *11)
+[    0.080687] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 9 *10 11)
+[    0.080800] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 *9 10 11)
+[    0.080990] ACPI: Enabled 2 GPEs in block 00 to 07
+[    0.081330] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.081331] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.081334] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.081334] vgaarb: loaded
+[    0.081442] SCSI subsystem initialized
+[    0.081562] libata version 3.00 loaded.
+[    0.081603] ACPI: bus type USB registered
+[    0.081617] usbcore: registered new interface driver usbfs
+[    0.081632] usbcore: registered new interface driver hub
+[    0.081654] usbcore: registered new device driver usb
+[    0.081835] PCI: Using ACPI for IRQ routing
+[    0.081837] PCI: pci_cache_line_size set to 64 bytes
+[    0.082000] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    0.082003] e820: reserve RAM buffer [mem 0x7fff0000-0x7fffffff]
+[    0.082081] NetLabel: Initializing
+[    0.082082] NetLabel:  domain hash size = 128
+[    0.082082] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.082098] NetLabel:  unlabeled traffic allowed by default
+[    0.082403] clocksource: Switched to clocksource kvm-clock
+[    0.096416] VFS: Disk quotas dquot_6.6.0
+[    0.096437] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.096521] pnp: PnP ACPI init
+[    0.096574] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.096632] pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+[    0.097403] pnp: PnP ACPI: found 2 devices
+[    0.109905] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.109914] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.109915] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.109916] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.109917] pci_bus 0000:00: resource 7 [mem 0x80000000-0xffdfffff window]
+[    0.109964] NET: Registered protocol family 2
+[    0.110098] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.110129] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[    0.111391] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.111437] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.111442] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.111479] NET: Registered protocol family 1
+[    0.111491] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.111515] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.111554] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.112563] PCI: CLS 0 bytes, default 64
+[    0.112604] Unpacking initramfs...
+[    0.354972] Freeing initrd memory: 18484K
+[    0.355155] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.356429] audit: initializing netlink subsys (disabled)
+[    0.356657] audit: type=2000 audit(1502276885.968:1): state=initialized audit_enabled=0 res=1
+[    0.356864] Initialise system trusted keyrings
+[    0.357042] workingset: timestamp_bits=36 max_order=19 bucket_order=0
+[    0.358021] zbud: loaded
+[    0.358711] SELinux:  Registering netfilter hooks
+[    0.399079] NET: Registered protocol family 38
+[    0.399082] Key type asymmetric registered
+[    0.399083] Asymmetric key parser 'x509' registered
+[    0.399104] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.399139] io scheduler noop registered
+[    0.399140] io scheduler deadline registered
+[    0.399175] io scheduler cfq registered (default)
+[    0.399176] io scheduler mq-deadline registered
+[    0.399301] atomic64_test: passed for x86-64 platform with CX8 and with SSE
+[    0.399402] intel_idle: does not run on family 6 model 69
+[    0.399755] ACPI: AC Adapter [AC] (off-line)
+[    0.399807] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.399810] ACPI: Power Button [PWRF]
+[    0.399881] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    0.399883] ACPI: Sleep Button [SLPF]
+[    0.400022] GHES: HEST is not enabled!
+[    0.401428] ACPI: Battery Slot [BAT0] (battery present)
+[    0.401454] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.406603] Non-volatile memory driver v1.3
+[    0.406706] Linux agpgart interface v0.103
+[    0.407117] ahci 0000:00:0d.0: version 3.0
+[    0.407824] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+[    0.407987] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[    0.407990] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[    0.408376] scsi host0: ahci
+[    0.408453] ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+[    0.408472] ata_piix 0000:00:01.1: version 2.13
+[    0.409065] scsi host1: ata_piix
+[    0.409167] scsi host2: ata_piix
+[    0.409192] ata2: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    0.409193] ata3: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    0.409256] libphy: Fixed MDIO Bus: probed
+[    0.409382] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.409385] ehci-pci: EHCI PCI platform driver
+[    0.409394] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.409399] ohci-pci: OHCI PCI platform driver
+[    0.409949] ohci-pci 0000:00:06.0: OHCI PCI host controller
+[    0.410323] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+[    0.410387] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+[    0.465037] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+[    0.465040] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.465042] usb usb1: Product: OHCI PCI host controller
+[    0.465043] usb usb1: Manufacturer: Linux 4.11.12-200.fc25.x86_64 ohci_hcd
+[    0.465044] usb usb1: SerialNumber: 0000:00:06.0
+[    0.465364] hub 1-0:1.0: USB hub found
+[    0.465387] hub 1-0:1.0: 12 ports detected
+[    0.465901] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.465973] usbcore: registered new interface driver usbserial
+[    0.465979] usbcore: registered new interface driver usbserial_generic
+[    0.465985] usbserial: USB Serial support registered for generic
+[    0.466019] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    0.466646] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.466652] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.466827] mousedev: PS/2 mouse device common for all mice
+[    0.467946] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    0.468039] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    0.468234] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    0.468317] device-mapper: uevent: version 1.0.3
+[    0.469598] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[    0.469748] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.469792] usbcore: registered new interface driver usbhid
+[    0.469793] usbhid: USB HID core driver
+[    0.469872] drop_monitor: Initializing network drop monitor service
+[    0.469951] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    0.470040] Initializing XFRM netlink socket
+[    0.470217] NET: Registered protocol family 10
+[    0.474201] Segment Routing with IPv6
+[    0.474219] mip6: Mobile IPv6
+[    0.474222] NET: Registered protocol family 17
+[    0.474748] AVX version of gcm_enc/dec engaged.
+[    0.474749] AES CTR mode by8 optimization enabled
+[    0.491027] registered taskstats version 1
+[    0.491034] Loading compiled-in X.509 certificates
+[    0.492840] alg: No test for pkcs1pad(rsa,sha256) (pkcs1pad(rsa-generic,sha256))
+[    0.493568] Loaded X.509 cert 'Fedora kernel signing key: 244d3a83144a9efd0f07580884e1ebad17bb8c33'
+[    0.493592] zswap: loaded using pool lzo/zbud
+[    0.503302] Key type big_key registered
+[    0.505389] Key type encrypted registered
+[    0.505638]   Magic number: 13:916:124
+[    0.505762] rtc_cmos rtc_cmos: setting system clock to 2017-08-09 11:08:00 UTC (1502276880)
+[    0.505781] PM: Hibernation image not present or could not be loaded.
+[    0.563188] ata3.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[    0.563663] ata3.00: configured for UDMA/33
+[    0.677361] random: fast init done
+[    0.678052] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[    0.723872] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    0.723991] ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[    0.723992] ata1.00: 41943040 sectors, multi 128: LBA48 NCQ (depth 31/32)
+[    0.724300] ata1.00: configured for UDMA/133
+[    0.724548] scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[    0.724759] sd 0:0:0:0: [sda] 41943040 512-byte logical blocks: (21.5 GB/20.0 GiB)
+[    0.724764] sd 0:0:0:0: [sda] Write Protect is off
+[    0.724765] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    0.724768] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    0.724773] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    0.725215] scsi 2:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[    0.733314]  sda: sda1 sda2
+[    0.733539] sd 0:0:0:0: [sda] Attached SCSI disk
+[    0.737282] sr 2:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+[    0.737283] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    0.737427] sr 2:0:0:0: Attached scsi CD-ROM sr0
+[    0.737613] sr 2:0:0:0: Attached scsi generic sg1 type 5
+[    0.739003] Freeing unused kernel memory: 2124K
+[    0.739004] Write protecting the kernel read-only data: 14336k
+[    0.739480] Freeing unused kernel memory: 1524K
+[    0.740414] Freeing unused kernel memory: 492K
+[    0.741803] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.741808] rodata_test: all tests were successful
+[    0.748810] systemd[1]: systemd 231 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    0.748841] systemd[1]: Detected virtualization oracle.
+[    0.748844] systemd[1]: Detected architecture x86-64.
+[    0.748846] systemd[1]: Running in initial RAM disk.
+[    0.748857] systemd[1]: Set hostname to <localhost.localdomain>.
+[    0.787530] systemd[1]: Listening on udev Control Socket.
+[    0.787559] systemd[1]: Reached target Local File Systems.
+[    0.787796] systemd[1]: Created slice System Slice.
+[    0.787819] systemd[1]: Listening on udev Kernel Socket.
+[    0.787825] systemd[1]: Reached target Timers.
+[    0.804061] audit: type=1130 audit(1502276880.797:2): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.804257] audit: type=1130 audit(1502276880.797:3): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.812534] audit: type=1130 audit(1502276880.806:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.858492] usb 1-1: new full-speed USB device number 2 using ohci-pci
+[    0.894886] audit: type=1130 audit(1502276880.886:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-cmdline comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.920939] audit: type=1130 audit(1502276880.913:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-pre-udev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.926893] audit: type=1130 audit(1502276880.920:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.929000] audit: type=1130 audit(1502276880.922:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-vconsole-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.960456] audit: type=1130 audit(1502276880.949:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    0.974815] audit: type=1130 audit(1502276880.968:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=plymouth-start comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    1.024228] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    1.024255] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    1.093333] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021
+[    1.093335] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+[    1.093337] usb 1-1: Product: USB Tablet
+[    1.093338] usb 1-1: Manufacturer: VirtualBox
+[    1.110412] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input5
+[    1.110721] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[    1.378530] tsc: Refined TSC clocksource calibration: 2299.536 MHz
+[    1.378540] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x21257ec00f1, max_idle_ns: 440795268175 ns
+[    1.389396] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:f9:d6:e3
+[    1.389401] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    1.390292] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[    1.837851] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[    2.094915] systemd-journald[190]: Received SIGTERM from PID 1 (systemd).
+[    2.132654] systemd: 16 output lines suppressed due to ratelimiting
+[    2.312986] SELinux: 32768 avtab hash slots, 107097 rules.
+[    2.326348] SELinux: 32768 avtab hash slots, 107097 rules.
+[    2.357364] SELinux:  8 users, 14 roles, 5072 types, 310 bools, 1 sens, 1024 cats
+[    2.357367] SELinux:  94 classes, 107097 rules
+[    2.360563] SELinux:  Class sctp_socket not defined in policy.
+[    2.360563] SELinux:  Class icmp_socket not defined in policy.
+[    2.360564] SELinux:  Class ax25_socket not defined in policy.
+[    2.360564] SELinux:  Class ipx_socket not defined in policy.
+[    2.360565] SELinux:  Class netrom_socket not defined in policy.
+[    2.360565] SELinux:  Class atmpvc_socket not defined in policy.
+[    2.360565] SELinux:  Class x25_socket not defined in policy.
+[    2.360566] SELinux:  Class rose_socket not defined in policy.
+[    2.360566] SELinux:  Class decnet_socket not defined in policy.
+[    2.360567] SELinux:  Class atmsvc_socket not defined in policy.
+[    2.360567] SELinux:  Class rds_socket not defined in policy.
+[    2.360567] SELinux:  Class irda_socket not defined in policy.
+[    2.360568] SELinux:  Class pppox_socket not defined in policy.
+[    2.360568] SELinux:  Class llc_socket not defined in policy.
+[    2.360569] SELinux:  Class can_socket not defined in policy.
+[    2.360569] SELinux:  Class tipc_socket not defined in policy.
+[    2.360570] SELinux:  Class bluetooth_socket not defined in policy.
+[    2.360570] SELinux:  Class iucv_socket not defined in policy.
+[    2.360570] SELinux:  Class rxrpc_socket not defined in policy.
+[    2.360571] SELinux:  Class isdn_socket not defined in policy.
+[    2.360571] SELinux:  Class phonet_socket not defined in policy.
+[    2.360572] SELinux:  Class ieee802154_socket not defined in policy.
+[    2.360572] SELinux:  Class caif_socket not defined in policy.
+[    2.360572] SELinux:  Class alg_socket not defined in policy.
+[    2.360573] SELinux:  Class nfc_socket not defined in policy.
+[    2.360573] SELinux:  Class vsock_socket not defined in policy.
+[    2.360574] SELinux:  Class kcm_socket not defined in policy.
+[    2.360574] SELinux:  Class qipcrtr_socket not defined in policy.
+[    2.360574] SELinux:  Class smc_socket not defined in policy.
+[    2.360575] SELinux: the above unknown classes and permissions will be allowed
+[    2.360578] SELinux:  Completing initialization.
+[    2.360578] SELinux:  Setting up existing superblocks.
+[    2.373624] systemd[1]: Successfully loaded SELinux policy in 99.678ms.
+[    2.417677] systemd[1]: Relabelled /dev and /run in 12.514ms.
+[    2.868018] random: crng init done
+[    2.912645] EXT4-fs (dm-0): re-mounted. Opts: (null)
+[    2.987449] systemd-journald[539]: Received request to flush runtime journal from PID 1
+[    2.994760] systemd-journald[539]: File /var/log/journal/a7a37748433d48da9d8c040154e46557/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    3.390615] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+[    3.393391] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    3.393446] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input6
+[    3.552532] vboxguest: loading out-of-tree module taints kernel.
+[    3.552654] vboxguest: module verification failed: signature and/or required key missing - tainting kernel
+[    3.559959] vgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds
+[    3.560046] input: Unspecified device as /devices/pci0000:00/0000:00:04.0/input/input7
+[    3.560282] vboxguest: misc device minor 58, IRQ 20, I/O port d020, MMIO at 00000000f0400000 (size 0x400000)
+[    3.560283] vboxguest: Successfully loaded version 5.1.26 (interface 0x00010004)
+[    3.612571] [drm] VRAM 02000000
+[    3.615474] [TTM] Zone  kernel: Available graphics memory: 1023472 kiB
+[    3.615476] [TTM] Initializing pool allocator
+[    3.615481] [TTM] Initializing DMA pool allocator
+[    3.616303] fbcon: vboxdrmfb (fb0) is primary device
+[    3.631372] Console: switching to colour frame buffer device 100x37
+[    3.645249] vboxvideo 0000:00:02.0: fb0: vboxdrmfb frame buffer device
+[    3.651580] [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+[    3.684928] RAPL PMU: API unit is 2^-32 Joules, 4 fixed counters, 10737418240 ms ovfl timer
+[    3.684929] RAPL PMU: hw unit of domain pp0-core 2^-0 Joules
+[    3.684930] RAPL PMU: hw unit of domain package 2^-0 Joules
+[    3.684930] RAPL PMU: hw unit of domain dram 2^-0 Joules
+[    3.684931] RAPL PMU: hw unit of domain pp1-gpu 2^-0 Joules
+[    3.751289] ppdev: user-space parallel port driver
+[    3.890079] Adding 2097148k swap on /dev/mapper/fedora-swap.  Priority:-1 extents:1 across:2097148k FS
+[    6.132807] snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+[    6.217514] kauditd_printk_skb: 49 callbacks suppressed
+[    6.217516] audit: type=1130 audit(1502276886.211:60): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=lvm2-pvscan@8:2 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.242233] audit: type=1130 audit(1502276886.234:61): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-udev-settle comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.280000] audit: type=1130 audit(1502276886.272:62): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=dmraid-activation comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.280002] audit: type=1131 audit(1502276886.272:63): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=dmraid-activation comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.354532] audit: type=1130 audit(1502276886.347:64): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-fsck@dev-disk-by\x2duuid-dce9faec\x2df81d\x2d4d8f\x2db514\x2d49cf997480ac comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.381646] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[    6.430039] audit: type=1130 audit(1502276886.423:65): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=dracut-shutdown comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.431558] audit: type=1130 audit(1502276886.424:66): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=plymouth-read-write comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.431561] audit: type=1131 audit(1502276886.424:67): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=plymouth-read-write comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.445267] audit: type=1130 audit(1502276886.439:68): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=nfs-config comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.445270] audit: type=1131 audit(1502276886.439:69): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=nfs-config comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.563906] RPC: Registered named UNIX socket transport module.
+[    6.563907] RPC: Registered udp transport module.
+[    6.563908] RPC: Registered tcp transport module.
+[    6.563908] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    7.275568] vboxsf: Successfully loaded version 5.1.26 (interface 0x00010004)
+[    8.522545] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    8.686768] Ebtables v2.0 registered
+[    8.777895] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    8.900118] VBoxService 5.1.26 r117224 (verbosity: 0) linux.amd64 (Jul 27 2017 13:45:26) release log
+               00:00:00.000118 main     Log opened 2017-08-09T11:08:08.894308000Z
+[    8.900188] 00:00:00.000226 main     OS Product: Linux
+[    8.900208] 00:00:00.000263 main     OS Release: 4.11.12-200.fc25.x86_64
+[    8.900247] 00:00:00.000282 main     OS Version: #1 SMP Fri Jul 21 16:41:43 UTC 2017
+[    8.900275] 00:00:00.000321 main     Executable: /opt/VBoxGuestAdditions-5.1.26/sbin/VBoxService
+               00:00:00.000322 main     Process ID: 984
+               00:00:00.000322 main     Package type: LINUX_64BITS_GENERIC
+[    8.901184] 00:00:00.001225 main     5.1.26 r117224 started. Verbose level = 0
+[    8.976622] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[    8.979259] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[    8.980225] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[    8.980535] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+[    9.517455] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    9.594300] Netfilter messages via NETLINK v0.30.
+[    9.602712] ip_set: protocol 6
+[   23.058999] fuse init (API version 7.26)
+[  304.536440] step6 LOAD
+[  304.536453] [ffff9c8c5fb58000] 12288 byte memory allocated.
+[  304.536548] BUG: unable to handle kernel NULL pointer dereference at 0000000000000308
+[  304.536590] IP: __radix_tree_lookup+0x10/0xf0
+[  304.536602] PGD 0 
+
+[  304.536626] Oops: 0000 [#1] SMP
+[  304.536636] Modules linked in: step6(OE) fuse ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ip_set nfnetlink ebtable_broute bridge stp llc ebtable_nat ip6table_raw ip6table_mangle ip6table_security ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 iptable_raw iptable_mangle iptable_security iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack libcrc32c ebtable_filter ebtables ip6table_filter ip6_tables vboxsf(OE) sunrpc snd_intel8x0 snd_ac97_codec ac97_bus crct10dif_pclmul crc32_pclmul ppdev ghash_clmulni_intel snd_seq intel_rapl_perf snd_seq_device snd_pcm vboxvideo(OE) joydev vboxguest(OE) snd_timer parport_pc ttm snd drm_kms_helper parport soundcore drm video i2c_piix4 tpm_tis tpm_tis_core tpm e1000 crc32c_intel serio_raw ata_generic pata_acpi
+[  304.536832] CPU: 1 PID: 2691 Comm: insmod Tainted: G           OE   4.11.12-200.fc25.x86_64 #1
+[  304.536854] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.536875] task: ffff9c8c68c9cb00 task.stack: ffffb11501b4c000
+[  304.536892] RIP: 0010:__radix_tree_lookup+0x10/0xf0
+[  304.536905] RSP: 0000:ffffb11501b4fcb0 EFLAGS: 00010246
+[  304.536923] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffb11501b4fcd0
+[  304.536941] RDX: 0000000000000000 RSI: 00000000000157ea RDI: 0000000000000300
+[  304.536960] RBP: ffffb11501b4fcc0 R08: 0000000000000000 R09: ffffb11501b4fcd0
+[  304.536979] R10: 0000000000000040 R11: 00007fff24c87ec8 R12: 0000000000000300
+[  304.536997] R13: 00000000000157ea R14: 00000000000157ea R15: ffff9c8c5fabcb40
+[  304.537016] FS:  00007f1d2d6425c0(0000) GS:ffff9c8c7fd00000(0000) knlGS:0000000000000000
+[  304.537036] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  304.537051] CR2: 0000000000000308 CR3: 000000005fb30000 CR4: 00000000000406e0
+[  304.537089] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[  304.537108] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[  304.537126] Call Trace:
+[  304.537136]  radix_tree_lookup_slot+0x22/0x50
+[  304.537154]  find_get_entry+0x20/0x180
+[  304.537166]  pagecache_get_page+0x2c/0x310
+[  304.537178]  lookup_swap_cache+0x3e/0x70
+[  304.537191]  do_swap_page+0x95/0x7c0
+[  304.537202]  __handle_mm_fault+0x69a/0x1080
+[  304.537215]  handle_mm_fault+0xd3/0x240
+[  304.537227]  __do_page_fault+0x23e/0x4e0
+[  304.537671]  do_page_fault+0x30/0x80
+[  304.538109]  page_fault+0x28/0x30
+[  304.538512] RIP: 0033:0x7f1d2d211e30
+[  304.539001] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.539388] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.539771] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.540145] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.540510] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.540919] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.541266] Code: 27 e9 22 ff ff ff 89 d8 e9 37 fe ff ff 0f 1f 40 00 66 2e 0f 1f 84 00 00 00 00 00 55 49 89 c9 41 ba 40 00 00 00 48 89 e5 41 54 53 <48> 8b 5f 08 48 89 d8 83 e0 03 48 83 f8 01 0f 85 b3 00 00 00 48 
+[  304.542420] RIP: __radix_tree_lookup+0x10/0xf0 RSP: ffffb11501b4fcb0
+[  304.542952] CR2: 0000000000000308
+[  304.543334] fbcon_switch: detected unhandled fb_set_par error, error code -16
+[  304.544756] fbcon_switch: detected unhandled fb_set_par error, error code -16
+[  304.545792] ---[ end trace c563ccc714b94939 ]---
+[  304.545842] swap_info_get: Bad swap file entry 2802000000016add
+[  304.545844] BUG: Bad page map in process insmod  pte:800000005ab76800 pmd:5fb5c067
+[  304.545846] addr:00007f1d2d20d000 vm_flags:08100071 anon_vma:ffff9c8c7941c370 mapping:ffff9c8c7c72f500 index:14
+[  304.545853] file:libz.so.1.2.8 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.545856] CPU: 1 PID: 2691 Comm: insmod Tainted: G      D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.545857] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.545858] Call Trace:
+[  304.545863]  dump_stack+0x63/0x86
+[  304.545867]  print_bad_pte+0x1df/0x2b0
+[  304.545869]  ? __swap_info_get+0x91/0xa0
+[  304.545870]  ? _swap_info_get+0x12/0x50
+[  304.545872]  unmap_page_range+0x5ca/0x980
+[  304.545875]  unmap_single_vma+0x7d/0xe0
+[  304.545876]  unmap_vmas+0x51/0xa0
+[  304.545878]  exit_mmap+0xa7/0x170
+[  304.545880]  mmput+0x66/0x150
+[  304.545882]  do_exit+0x28f/0xba0
+[  304.545886]  rewind_stack_do_exit+0x17/0x20
+[  304.545888] RIP: 0033:0x7f1d2d211e30
+[  304.545889] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.545891] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.545892] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.545892] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.545893] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.545894] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.545896] swap_info_get: Bad swap file entry 802000000016929
+[  304.545897] BUG: Bad page map in process insmod  pte:800000005a4a4800 pmd:5fb5c067
+[  304.545899] addr:00007f1d2d20e000 vm_flags:08100073 anon_vma:ffff9c8c7941c370 mapping:ffff9c8c7c72f500 index:15
+[  304.545902] file:libz.so.1.2.8 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.545903] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.545904] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.545905] Call Trace:
+[  304.545906]  dump_stack+0x63/0x86
+[  304.545908]  print_bad_pte+0x1df/0x2b0
+[  304.545909]  ? __swap_info_get+0x91/0xa0
+[  304.545910]  ? _swap_info_get+0x12/0x50
+[  304.545912]  unmap_page_range+0x5ca/0x980
+[  304.545914]  unmap_single_vma+0x7d/0xe0
+[  304.545916]  unmap_vmas+0x51/0xa0
+[  304.545918]  exit_mmap+0xa7/0x170
+[  304.545919]  mmput+0x66/0x150
+[  304.545921]  do_exit+0x28f/0xba0
+[  304.545923]  rewind_stack_do_exit+0x17/0x20
+[  304.545924] RIP: 0033:0x7f1d2d211e30
+[  304.545925] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.545926] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.545927] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.545928] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.545929] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.545929] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.545932] swap_info_get: Unused swap offset entry 000157eb
+[  304.545933] BUG: Bad page map in process insmod  pte:55fac000 pmd:5fb5c067
+[  304.545934] addr:00007f1d2d20f000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:0
+[  304.545937] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.545939] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.545939] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.545940] Call Trace:
+[  304.545941]  dump_stack+0x63/0x86
+[  304.545943]  print_bad_pte+0x1df/0x2b0
+[  304.545944]  ? _swap_info_get+0x47/0x50
+[  304.545946]  unmap_page_range+0x5ca/0x980
+[  304.545948]  unmap_single_vma+0x7d/0xe0
+[  304.545950]  unmap_vmas+0x51/0xa0
+[  304.545951]  exit_mmap+0xa7/0x170
+[  304.545953]  mmput+0x66/0x150
+[  304.545954]  do_exit+0x28f/0xba0
+[  304.545956]  rewind_stack_do_exit+0x17/0x20
+[  304.545957] RIP: 0033:0x7f1d2d211e30
+[  304.545958] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.545959] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.545960] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.545962] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.545963] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.545964] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.545965] swap_info_get: Bad swap file entry 30000000000157ea
+[  304.545966] BUG: Bad page map in process insmod  pte:55fab000 pmd:5fb5c067
+[  304.545967] addr:00007f1d2d210000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:1
+[  304.545970] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.545971] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.545972] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.545972] Call Trace:
+[  304.545973]  dump_stack+0x63/0x86
+[  304.545975]  print_bad_pte+0x1df/0x2b0
+[  304.545976]  ? __swap_info_get+0x91/0xa0
+[  304.545977]  ? _swap_info_get+0x12/0x50
+[  304.545979]  unmap_page_range+0x5ca/0x980
+[  304.545981]  unmap_single_vma+0x7d/0xe0
+[  304.545983]  unmap_vmas+0x51/0xa0
+[  304.545984]  exit_mmap+0xa7/0x170
+[  304.545986]  mmput+0x66/0x150
+[  304.545987]  do_exit+0x28f/0xba0
+[  304.545989]  rewind_stack_do_exit+0x17/0x20
+[  304.545990] RIP: 0033:0x7f1d2d211e30
+[  304.545991] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.545992] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.545993] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.545994] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.545995] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.545995] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.545997] swap_info_get: Bad swap file entry 20000000000157ea
+[  304.545998] BUG: Bad page map in process insmod  pte:55faa000 pmd:5fb5c067
+[  304.545999] addr:00007f1d2d211000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:2
+[  304.546001] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546002] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546003] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546004] Call Trace:
+[  304.546005]  dump_stack+0x63/0x86
+[  304.546008]  print_bad_pte+0x1df/0x2b0
+[  304.546009]  ? __swap_info_get+0x91/0xa0
+[  304.546010]  ? _swap_info_get+0x12/0x50
+[  304.546012]  unmap_page_range+0x5ca/0x980
+[  304.546014]  unmap_single_vma+0x7d/0xe0
+[  304.546016]  unmap_vmas+0x51/0xa0
+[  304.546017]  exit_mmap+0xa7/0x170
+[  304.546018]  mmput+0x66/0x150
+[  304.546020]  do_exit+0x28f/0xba0
+[  304.546022]  rewind_stack_do_exit+0x17/0x20
+[  304.546023] RIP: 0033:0x7f1d2d211e30
+[  304.546023] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546025] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546025] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546026] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546027] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546028] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546029] swap_info_get: Bad swap file entry 10000000000157ea
+[  304.546030] BUG: Bad page map in process insmod  pte:55fa9000 pmd:5fb5c067
+[  304.546031] addr:00007f1d2d212000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:3
+[  304.546034] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546035] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546036] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546037] Call Trace:
+[  304.546038]  dump_stack+0x63/0x86
+[  304.546039]  print_bad_pte+0x1df/0x2b0
+[  304.546040]  ? __swap_info_get+0x91/0xa0
+[  304.546056]  ? _swap_info_get+0x12/0x50
+[  304.546058]  unmap_page_range+0x5ca/0x980
+[  304.546061]  unmap_single_vma+0x7d/0xe0
+[  304.546062]  unmap_vmas+0x51/0xa0
+[  304.546064]  exit_mmap+0xa7/0x170
+[  304.546065]  mmput+0x66/0x150
+[  304.546067]  do_exit+0x28f/0xba0
+[  304.546069]  rewind_stack_do_exit+0x17/0x20
+[  304.546069] RIP: 0033:0x7f1d2d211e30
+[  304.546070] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546071] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546072] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546073] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546074] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546075] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546080] swap_info_get: Unused swap offset entry 0001567b
+[  304.546081] BUG: Bad page map in process insmod  pte:559ec000 pmd:5fb5c067
+[  304.546082] addr:00007f1d2d214000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:5
+[  304.546085] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546086] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546087] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546087] Call Trace:
+[  304.546089]  dump_stack+0x63/0x86
+[  304.546090]  print_bad_pte+0x1df/0x2b0
+[  304.546092]  ? _swap_info_get+0x47/0x50
+[  304.546093]  unmap_page_range+0x5ca/0x980
+[  304.546095]  unmap_single_vma+0x7d/0xe0
+[  304.546097]  unmap_vmas+0x51/0xa0
+[  304.546098]  exit_mmap+0xa7/0x170
+[  304.546100]  mmput+0x66/0x150
+[  304.546101]  do_exit+0x28f/0xba0
+[  304.546103]  rewind_stack_do_exit+0x17/0x20
+[  304.546104] RIP: 0033:0x7f1d2d211e30
+[  304.546105] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546106] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546107] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546108] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546109] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546109] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546111] swap_info_get: Bad swap file entry 300000000001567a
+[  304.546112] BUG: Bad page map in process insmod  pte:559eb000 pmd:5fb5c067
+[  304.546113] addr:00007f1d2d215000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:6
+[  304.546115] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546116] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546117] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546118] Call Trace:
+[  304.546119]  dump_stack+0x63/0x86
+[  304.546121]  print_bad_pte+0x1df/0x2b0
+[  304.546122]  ? __swap_info_get+0x91/0xa0
+[  304.546123]  ? _swap_info_get+0x12/0x50
+[  304.546125]  unmap_page_range+0x5ca/0x980
+[  304.546127]  unmap_single_vma+0x7d/0xe0
+[  304.546128]  unmap_vmas+0x51/0xa0
+[  304.546130]  exit_mmap+0xa7/0x170
+[  304.546131]  mmput+0x66/0x150
+[  304.546133]  do_exit+0x28f/0xba0
+[  304.546135]  rewind_stack_do_exit+0x17/0x20
+[  304.546136] RIP: 0033:0x7f1d2d211e30
+[  304.546137] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546138] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546139] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546140] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546141] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546142] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546143] swap_info_get: Bad swap file entry 200000000001567a
+[  304.546144] BUG: Bad page map in process insmod  pte:559ea000 pmd:5fb5c067
+[  304.546145] addr:00007f1d2d216000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:7
+[  304.546147] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546149] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546149] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546150] Call Trace:
+[  304.546151]  dump_stack+0x63/0x86
+[  304.546153]  print_bad_pte+0x1df/0x2b0
+[  304.546154]  ? __swap_info_get+0x91/0xa0
+[  304.546155]  ? _swap_info_get+0x12/0x50
+[  304.546157]  unmap_page_range+0x5ca/0x980
+[  304.546159]  unmap_single_vma+0x7d/0xe0
+[  304.546161]  unmap_vmas+0x51/0xa0
+[  304.546162]  exit_mmap+0xa7/0x170
+[  304.546164]  mmput+0x66/0x150
+[  304.546165]  do_exit+0x28f/0xba0
+[  304.546168]  rewind_stack_do_exit+0x17/0x20
+[  304.546168] RIP: 0033:0x7f1d2d211e30
+[  304.546169] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546170] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546171] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546172] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546173] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546174] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546175] swap_info_get: Bad swap file entry 100000000001567a
+[  304.546176] BUG: Bad page map in process insmod  pte:559e9000 pmd:5fb5c067
+[  304.546177] addr:00007f1d2d217000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:8
+[  304.546180] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546181] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546182] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546183] Call Trace:
+[  304.546184]  dump_stack+0x63/0x86
+[  304.546186]  print_bad_pte+0x1df/0x2b0
+[  304.546187]  ? __swap_info_get+0x91/0xa0
+[  304.546188]  ? _swap_info_get+0x12/0x50
+[  304.546190]  unmap_page_range+0x5ca/0x980
+[  304.546192]  unmap_single_vma+0x7d/0xe0
+[  304.546193]  unmap_vmas+0x51/0xa0
+[  304.546195]  exit_mmap+0xa7/0x170
+[  304.546196]  mmput+0x66/0x150
+[  304.546198]  do_exit+0x28f/0xba0
+[  304.546199]  rewind_stack_do_exit+0x17/0x20
+[  304.546200] RIP: 0033:0x7f1d2d211e30
+[  304.546201] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546202] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546205] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546206] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546207] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546208] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546209] swap_info_get: Bad swap file entry 10000000000157eb
+[  304.546210] BUG: Bad page map in process insmod  pte:55fad000 pmd:5fb5c067
+[  304.546211] addr:00007f1d2d218000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:9
+[  304.546214] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546215] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546215] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546216] Call Trace:
+[  304.546217]  dump_stack+0x63/0x86
+[  304.546219]  print_bad_pte+0x1df/0x2b0
+[  304.546220]  ? __swap_info_get+0x91/0xa0
+[  304.546221]  ? _swap_info_get+0x12/0x50
+[  304.546223]  unmap_page_range+0x5ca/0x980
+[  304.546225]  unmap_single_vma+0x7d/0xe0
+[  304.546227]  unmap_vmas+0x51/0xa0
+[  304.546228]  exit_mmap+0xa7/0x170
+[  304.546229]  mmput+0x66/0x150
+[  304.546231]  do_exit+0x28f/0xba0
+[  304.546233]  rewind_stack_do_exit+0x17/0x20
+[  304.546234] RIP: 0033:0x7f1d2d211e30
+[  304.546235] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546236] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546237] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546238] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546239] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546240] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546241] swap_info_get: Bad swap file entry 20000000000157eb
+[  304.546242] BUG: Bad page map in process insmod  pte:55fae000 pmd:5fb5c067
+[  304.546243] addr:00007f1d2d219000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:a
+[  304.546246] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546247] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546248] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546249] Call Trace:
+[  304.546250]  dump_stack+0x63/0x86
+[  304.546252]  print_bad_pte+0x1df/0x2b0
+[  304.546253]  ? __swap_info_get+0x91/0xa0
+[  304.546254]  ? _swap_info_get+0x12/0x50
+[  304.546256]  unmap_page_range+0x5ca/0x980
+[  304.546258]  unmap_single_vma+0x7d/0xe0
+[  304.546260]  unmap_vmas+0x51/0xa0
+[  304.546261]  exit_mmap+0xa7/0x170
+[  304.546263]  mmput+0x66/0x150
+[  304.546264]  do_exit+0x28f/0xba0
+[  304.546267]  rewind_stack_do_exit+0x17/0x20
+[  304.546268] RIP: 0033:0x7f1d2d211e30
+[  304.546268] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546270] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546270] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546271] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546272] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546273] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546274] swap_info_get: Bad swap file entry 30000000000157eb
+[  304.546275] BUG: Bad page map in process insmod  pte:55faf000 pmd:5fb5c067
+[  304.546276] addr:00007f1d2d21a000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:b
+[  304.546279] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546280] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546281] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546282] Call Trace:
+[  304.546283]  dump_stack+0x63/0x86
+[  304.546285]  print_bad_pte+0x1df/0x2b0
+[  304.546286]  ? __swap_info_get+0x91/0xa0
+[  304.546287]  ? _swap_info_get+0x12/0x50
+[  304.546289]  unmap_page_range+0x5ca/0x980
+[  304.546291]  unmap_single_vma+0x7d/0xe0
+[  304.546293]  unmap_vmas+0x51/0xa0
+[  304.546294]  exit_mmap+0xa7/0x170
+[  304.546296]  mmput+0x66/0x150
+[  304.546297]  do_exit+0x28f/0xba0
+[  304.546299]  rewind_stack_do_exit+0x17/0x20
+[  304.546300] RIP: 0033:0x7f1d2d211e30
+[  304.546301] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546302] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546303] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546303] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546304] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546305] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546307] swap_info_get: Unused swap offset entry 0001ffcc
+[  304.546308] BUG: Bad page map in process insmod  pte:7ff30000 pmd:5fb5c067
+[  304.546309] addr:00007f1d2d21b000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:c
+[  304.546312] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546313] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546314] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546315] Call Trace:
+[  304.546316]  dump_stack+0x63/0x86
+[  304.546317]  print_bad_pte+0x1df/0x2b0
+[  304.546319]  ? _swap_info_get+0x47/0x50
+[  304.546320]  unmap_page_range+0x5ca/0x980
+[  304.546322]  unmap_single_vma+0x7d/0xe0
+[  304.546324]  unmap_vmas+0x51/0xa0
+[  304.546325]  exit_mmap+0xa7/0x170
+[  304.546327]  mmput+0x66/0x150
+[  304.546329]  do_exit+0x28f/0xba0
+[  304.546331]  rewind_stack_do_exit+0x17/0x20
+[  304.546332] RIP: 0033:0x7f1d2d211e30
+[  304.546332] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546334] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546335] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546335] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546336] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546337] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546338] swap_info_get: Bad swap file entry 100000000001ffcc
+[  304.546339] BUG: Bad page map in process insmod  pte:7ff31000 pmd:5fb5c067
+[  304.546340] addr:00007f1d2d21c000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:d
+[  304.546343] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546344] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546345] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546345] Call Trace:
+[  304.546347]  dump_stack+0x63/0x86
+[  304.546348]  print_bad_pte+0x1df/0x2b0
+[  304.546350]  ? __swap_info_get+0x91/0xa0
+[  304.546351]  ? _swap_info_get+0x12/0x50
+[  304.546353]  unmap_page_range+0x5ca/0x980
+[  304.546355]  unmap_single_vma+0x7d/0xe0
+[  304.546357]  unmap_vmas+0x51/0xa0
+[  304.546358]  exit_mmap+0xa7/0x170
+[  304.546359]  mmput+0x66/0x150
+[  304.546361]  do_exit+0x28f/0xba0
+[  304.546363]  rewind_stack_do_exit+0x17/0x20
+[  304.546365] RIP: 0033:0x7f1d2d211e30
+[  304.546365] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546367] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546367] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546368] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546369] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546370] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546371] swap_info_get: Bad swap file entry 200000000001ffcc
+[  304.546372] BUG: Bad page map in process insmod  pte:7ff32000 pmd:5fb5c067
+[  304.546373] addr:00007f1d2d21d000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:e
+[  304.546376] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546377] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546378] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546379] Call Trace:
+[  304.546380]  dump_stack+0x63/0x86
+[  304.546382]  print_bad_pte+0x1df/0x2b0
+[  304.546383]  ? __swap_info_get+0x91/0xa0
+[  304.546384]  ? _swap_info_get+0x12/0x50
+[  304.546386]  unmap_page_range+0x5ca/0x980
+[  304.546388]  unmap_single_vma+0x7d/0xe0
+[  304.546390]  unmap_vmas+0x51/0xa0
+[  304.546391]  exit_mmap+0xa7/0x170
+[  304.546393]  mmput+0x66/0x150
+[  304.546395]  do_exit+0x28f/0xba0
+[  304.546397]  rewind_stack_do_exit+0x17/0x20
+[  304.546398] RIP: 0033:0x7f1d2d211e30
+[  304.546398] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546399] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546400] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546401] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546402] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546403] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546404] swap_info_get: Bad swap file entry 300000000001ffcc
+[  304.546405] BUG: Bad page map in process insmod  pte:7ff33000 pmd:5fb5c067
+[  304.546406] addr:00007f1d2d21e000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c7c736c90 index:f
+[  304.546409] file:liblzma.so.5.2.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.546411] CPU: 1 PID: 2691 Comm: insmod Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.546411] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.546412] Call Trace:
+[  304.546413]  dump_stack+0x63/0x86
+[  304.546415]  print_bad_pte+0x1df/0x2b0
+[  304.546416]  ? __swap_info_get+0x91/0xa0
+[  304.546417]  ? _swap_info_get+0x12/0x50
+[  304.546419]  unmap_page_range+0x5ca/0x980
+[  304.546421]  unmap_single_vma+0x7d/0xe0
+[  304.546423]  unmap_vmas+0x51/0xa0
+[  304.546424]  exit_mmap+0xa7/0x170
+[  304.546426]  mmput+0x66/0x150
+[  304.546427]  do_exit+0x28f/0xba0
+[  304.546429]  rewind_stack_do_exit+0x17/0x20
+[  304.546430] RIP: 0033:0x7f1d2d211e30
+[  304.546431] RSP: 002b:00007fff24c87e88 EFLAGS: 00010202
+[  304.546432] RAX: 00007f1d2d433be0 RBX: 00007f1d2d658658 RCX: 0000000000000000
+[  304.546433] RDX: 0000000000000000 RSI: 0000000000000008 RDI: 000000901c645080
+[  304.546434] RBP: 00007fff24c87f80 R08: 0000000000000000 R09: 00007f1d2cddf7e8
+[  304.546435] R10: 000000901c643d40 R11: 00007fff24c87ec8 R12: 00007f1d2d433810
+[  304.546435] R13: 0000000000000002 R14: 0000000000000000 R15: 00007fff24c87e90
+[  304.546530] BUG: Bad rss-counter state mm:ffff9c8c5fb49740 idx:0 val:15
+[  304.546531] BUG: Bad rss-counter state mm:ffff9c8c5fb49740 idx:1 val:2
+[  304.546533] BUG: Bad rss-counter state mm:ffff9c8c5fb49740 idx:2 val:-17
+[  304.546625] BUG: unable to handle kernel NULL pointer dereference at 00000000000003a0
+[  304.547035] IP: __radix_tree_lookup+0x10/0xf0
+[  304.547425] PGD 5fbd0067 
+[  304.547425] PUD 0 
+
+[  304.548515] Oops: 0000 [#2] SMP
+[  304.548883] Modules linked in: step6(OE) fuse ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ip_set nfnetlink ebtable_broute bridge stp llc ebtable_nat ip6table_raw ip6table_mangle ip6table_security ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 iptable_raw iptable_mangle iptable_security iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack libcrc32c ebtable_filter ebtables ip6table_filter ip6_tables vboxsf(OE) sunrpc snd_intel8x0 snd_ac97_codec ac97_bus crct10dif_pclmul crc32_pclmul ppdev ghash_clmulni_intel snd_seq intel_rapl_perf snd_seq_device snd_pcm vboxvideo(OE) joydev vboxguest(OE) snd_timer parport_pc ttm snd drm_kms_helper parport soundcore drm video i2c_piix4 tpm_tis tpm_tis_core tpm e1000 crc32c_intel serio_raw ata_generic pata_acpi
+[  304.552131] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.552583] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.553045] task: ffff9c8c68f82580 task.stack: ffffb11501b3c000
+[  304.553514] RIP: 0010:__radix_tree_lookup+0x10/0xf0
+[  304.554009] RSP: 0000:ffffb11501b3fcb0 EFLAGS: 00010246
+[  304.554445] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffb11501b3fcd0
+[  304.554869] RDX: 0000000000000000 RSI: 000000000001b3db RDI: 0000000000000398
+[  304.555584] RBP: ffffb11501b3fcc0 R08: 0000000000000000 R09: ffffb11501b3fcd0
+[  304.556833] R10: 0000000000000040 R11: 0000000000000000 R12: 0000000000000398
+[  304.557457] R13: 000000000001b3db R14: 000000000001b3db R15: ffff9c8c64f83c00
+[  304.557945] FS:  00007f6f665f0ec0(0000) GS:ffff9c8c7fd00000(0000) knlGS:0000000000000000
+[  304.558379] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  304.558859] CR2: 00000000000003a0 CR3: 000000005fb33000 CR4: 00000000000406e0
+[  304.559303] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[  304.559741] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[  304.560175] Call Trace:
+[  304.560603]  radix_tree_lookup_slot+0x22/0x50
+[  304.561043]  find_get_entry+0x20/0x180
+[  304.561448]  pagecache_get_page+0x2c/0x310
+[  304.561847]  lookup_swap_cache+0x3e/0x70
+[  304.562242]  do_swap_page+0x95/0x7c0
+[  304.562630]  ? do_wp_page+0x109/0x670
+[  304.563020]  __handle_mm_fault+0x69a/0x1080
+[  304.563404]  handle_mm_fault+0xd3/0x240
+[  304.563780]  __do_page_fault+0x23e/0x4e0
+[  304.564153]  do_page_fault+0x30/0x80
+[  304.564530]  page_fault+0x28/0x30
+[  304.564909] RIP: 0033:0x7f6f5a394f60
+[  304.565288] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.565663] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.566089] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.566450] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.566799] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.567187] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.567930] Code: 27 e9 22 ff ff ff 89 d8 e9 37 fe ff ff 0f 1f 40 00 66 2e 0f 1f 84 00 00 00 00 00 55 49 89 c9 41 ba 40 00 00 00 48 89 e5 41 54 53 <48> 8b 5f 08 48 89 d8 83 e0 03 48 83 f8 01 0f 85 b3 00 00 00 48 
+[  304.569065] RIP: __radix_tree_lookup+0x10/0xf0 RSP: ffffb11501b3fcb0
+[  304.569397] CR2: 00000000000003a0
+[  304.569803] ---[ end trace c563ccc714b9493a ]---
+[  304.570153] swap_info_get: Bad swap file entry 1802000000015210
+[  304.570156] BUG: Bad page map in process sudo  pte:8000000054841800 pmd:5fb5d067
+[  304.570158] addr:00007f6f5a392000 vm_flags:08100071 anon_vma:ffff9c8c79511410 mapping:ffff9c8c6c9d6858 index:4
+[  304.570164] file:pam_limits.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570167] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570168] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570169] Call Trace:
+[  304.570173]  dump_stack+0x63/0x86
+[  304.570177]  print_bad_pte+0x1df/0x2b0
+[  304.570179]  ? __swap_info_get+0x91/0xa0
+[  304.570180]  ? _swap_info_get+0x12/0x50
+[  304.570182]  unmap_page_range+0x5ca/0x980
+[  304.570184]  unmap_single_vma+0x7d/0xe0
+[  304.570186]  unmap_vmas+0x51/0xa0
+[  304.570188]  exit_mmap+0xa7/0x170
+[  304.570190]  mmput+0x66/0x150
+[  304.570192]  do_exit+0x28f/0xba0
+[  304.570195]  rewind_stack_do_exit+0x17/0x20
+[  304.570197] RIP: 0033:0x7f6f5a394f60
+[  304.570198] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570200] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570201] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570202] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570202] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570203] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570205] swap_info_get: Bad swap file entry 200000000001b3db
+[  304.570206] BUG: Bad page map in process sudo  pte:6cf6e000 pmd:5fb5d067
+[  304.570208] addr:00007f6f5a394000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c6c9d4ad0 index:0
+[  304.570211] file:pam_keyinit.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570213] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570213] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570214] Call Trace:
+[  304.570215]  dump_stack+0x63/0x86
+[  304.570217]  print_bad_pte+0x1df/0x2b0
+[  304.570219]  ? __swap_info_get+0x91/0xa0
+[  304.570220]  ? _swap_info_get+0x12/0x50
+[  304.570222]  unmap_page_range+0x5ca/0x980
+[  304.570224]  unmap_single_vma+0x7d/0xe0
+[  304.570226]  unmap_vmas+0x51/0xa0
+[  304.570227]  exit_mmap+0xa7/0x170
+[  304.570229]  mmput+0x66/0x150
+[  304.570230]  do_exit+0x28f/0xba0
+[  304.570232]  rewind_stack_do_exit+0x17/0x20
+[  304.570233] RIP: 0033:0x7f6f5a394f60
+[  304.570234] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570235] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570236] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570237] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570238] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570239] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570240] swap_info_get: Bad swap file entry 1000000000019940
+[  304.570241] BUG: Bad page map in process sudo  pte:66501000 pmd:5fb5d067
+[  304.570242] addr:00007f6f5a395000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c6c9d4ad0 index:1
+[  304.570245] file:pam_keyinit.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570246] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570247] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570248] Call Trace:
+[  304.570249]  dump_stack+0x63/0x86
+[  304.570251]  print_bad_pte+0x1df/0x2b0
+[  304.570252]  ? __swap_info_get+0x91/0xa0
+[  304.570253]  ? _swap_info_get+0x12/0x50
+[  304.570255]  unmap_page_range+0x5ca/0x980
+[  304.570257]  unmap_single_vma+0x7d/0xe0
+[  304.570259]  unmap_vmas+0x51/0xa0
+[  304.570260]  exit_mmap+0xa7/0x170
+[  304.570262]  mmput+0x66/0x150
+[  304.570263]  do_exit+0x28f/0xba0
+[  304.570265]  rewind_stack_do_exit+0x17/0x20
+[  304.570266] RIP: 0033:0x7f6f5a394f60
+[  304.570267] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570268] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570269] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570270] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570270] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570271] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570571] swap_info_get: Bad swap file entry 3802000000014ae4
+[  304.570573] BUG: Bad page map in process sudo  pte:8000000052b93800 pmd:5fb68067
+[  304.570574] addr:00007f6f5b9ea000 vm_flags:08100071 anon_vma:ffff9c8c5fbbb0f0 mapping:ffff9c8c6c9cf938 index:2
+[  304.570578] file:pam_env.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570579] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570580] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570581] Call Trace:
+[  304.570583]  dump_stack+0x63/0x86
+[  304.570585]  print_bad_pte+0x1df/0x2b0
+[  304.570586]  ? __swap_info_get+0x91/0xa0
+[  304.570588]  ? _swap_info_get+0x12/0x50
+[  304.570589]  unmap_page_range+0x5ca/0x980
+[  304.570592]  unmap_single_vma+0x7d/0xe0
+[  304.570593]  unmap_vmas+0x51/0xa0
+[  304.570595]  exit_mmap+0xa7/0x170
+[  304.570596]  mmput+0x66/0x150
+[  304.570598]  do_exit+0x28f/0xba0
+[  304.570600]  rewind_stack_do_exit+0x17/0x20
+[  304.570601] RIP: 0033:0x7f6f5a394f60
+[  304.570602] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570604] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570604] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570605] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570606] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570607] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570609] swap_info_get: Bad swap file entry 8020000000153e2
+[  304.570610] BUG: Bad page map in process sudo  pte:8000000054f88800 pmd:5fb68067
+[  304.570611] addr:00007f6f5b9eb000 vm_flags:08100073 anon_vma:ffff9c8c5fbbb0f0 mapping:ffff9c8c6c9cf938 index:3
+[  304.570614] file:pam_env.so fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570615] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570616] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570616] Call Trace:
+[  304.570618]  dump_stack+0x63/0x86
+[  304.570619]  print_bad_pte+0x1df/0x2b0
+[  304.570621]  ? __swap_info_get+0x91/0xa0
+[  304.570622]  ? _swap_info_get+0x12/0x50
+[  304.570623]  unmap_page_range+0x5ca/0x980
+[  304.570626]  unmap_single_vma+0x7d/0xe0
+[  304.570627]  unmap_vmas+0x51/0xa0
+[  304.570629]  exit_mmap+0xa7/0x170
+[  304.570630]  mmput+0x66/0x150
+[  304.570632]  do_exit+0x28f/0xba0
+[  304.570634]  rewind_stack_do_exit+0x17/0x20
+[  304.570635] RIP: 0033:0x7f6f5a394f60
+[  304.570635] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570636] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570637] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570638] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570639] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570640] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570641] swap_info_get: Bad swap file entry 200000000001d7e6
+[  304.570643] BUG: Bad page map in process sudo  pte:75f9a000 pmd:5fb68067
+[  304.570644] addr:00007f6f5b9ec000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:0
+[  304.570647] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570648] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570649] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570650] Call Trace:
+[  304.570651]  dump_stack+0x63/0x86
+[  304.570652]  print_bad_pte+0x1df/0x2b0
+[  304.570653]  ? __swap_info_get+0x91/0xa0
+[  304.570655]  ? _swap_info_get+0x12/0x50
+[  304.570656]  unmap_page_range+0x5ca/0x980
+[  304.570659]  unmap_single_vma+0x7d/0xe0
+[  304.570660]  unmap_vmas+0x51/0xa0
+[  304.570662]  exit_mmap+0xa7/0x170
+[  304.570663]  mmput+0x66/0x150
+[  304.570664]  do_exit+0x28f/0xba0
+[  304.570666]  rewind_stack_do_exit+0x17/0x20
+[  304.570667] RIP: 0033:0x7f6f5a394f60
+[  304.570668] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570669] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570670] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570671] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570672] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570673] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570674] swap_info_get: Bad swap file entry 100000000001d7e6
+[  304.570675] BUG: Bad page map in process sudo  pte:75f99000 pmd:5fb68067
+[  304.570676] addr:00007f6f5b9ed000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:1
+[  304.570678] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570680] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570680] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570681] Call Trace:
+[  304.570682]  dump_stack+0x63/0x86
+[  304.570684]  print_bad_pte+0x1df/0x2b0
+[  304.570685]  ? __swap_info_get+0x91/0xa0
+[  304.570686]  ? _swap_info_get+0x12/0x50
+[  304.570688]  unmap_page_range+0x5ca/0x980
+[  304.570690]  unmap_single_vma+0x7d/0xe0
+[  304.570692]  unmap_vmas+0x51/0xa0
+[  304.570693]  exit_mmap+0xa7/0x170
+[  304.570694]  mmput+0x66/0x150
+[  304.570709]  do_exit+0x28f/0xba0
+[  304.570712]  rewind_stack_do_exit+0x17/0x20
+[  304.570713] RIP: 0033:0x7f6f5a394f60
+[  304.570713] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570715] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570715] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570716] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570717] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570718] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570737] swap_info_get: Unused swap offset entry 0001d7e6
+[  304.570739] BUG: Bad page map in process sudo  pte:75f98000 pmd:5fb68067
+[  304.570740] addr:00007f6f5b9ee000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:2
+[  304.570743] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570744] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570745] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570745] Call Trace:
+[  304.570747]  dump_stack+0x63/0x86
+[  304.570749]  print_bad_pte+0x1df/0x2b0
+[  304.570750]  ? _swap_info_get+0x47/0x50
+[  304.570752]  unmap_page_range+0x5ca/0x980
+[  304.570754]  unmap_single_vma+0x7d/0xe0
+[  304.570756]  unmap_vmas+0x51/0xa0
+[  304.570757]  exit_mmap+0xa7/0x170
+[  304.570758]  mmput+0x66/0x150
+[  304.570760]  do_exit+0x28f/0xba0
+[  304.570762]  rewind_stack_do_exit+0x17/0x20
+[  304.570763] RIP: 0033:0x7f6f5a394f60
+[  304.570763] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570765] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570766] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570767] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570768] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570769] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570770] swap_info_get: Bad swap file entry 300000000001d40f
+[  304.570771] BUG: Bad page map in process sudo  pte:7503f000 pmd:5fb68067
+[  304.570772] addr:00007f6f5b9ef000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:3
+[  304.570775] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570776] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570777] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570777] Call Trace:
+[  304.570779]  dump_stack+0x63/0x86
+[  304.570781]  print_bad_pte+0x1df/0x2b0
+[  304.570782]  ? __swap_info_get+0x91/0xa0
+[  304.570783]  ? _swap_info_get+0x12/0x50
+[  304.570785]  unmap_page_range+0x5ca/0x980
+[  304.570787]  unmap_single_vma+0x7d/0xe0
+[  304.570789]  unmap_vmas+0x51/0xa0
+[  304.570790]  exit_mmap+0xa7/0x170
+[  304.570791]  mmput+0x66/0x150
+[  304.570793]  do_exit+0x28f/0xba0
+[  304.570795]  rewind_stack_do_exit+0x17/0x20
+[  304.570796] RIP: 0033:0x7f6f5a394f60
+[  304.570797] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570798] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570799] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570800] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570801] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570801] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570803] swap_info_get: Bad swap file entry 200000000001d40f
+[  304.570804] BUG: Bad page map in process sudo  pte:7503e000 pmd:5fb68067
+[  304.570805] addr:00007f6f5b9f0000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:4
+[  304.570808] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570809] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570810] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570811] Call Trace:
+[  304.570812]  dump_stack+0x63/0x86
+[  304.570813]  print_bad_pte+0x1df/0x2b0
+[  304.570814]  ? __swap_info_get+0x91/0xa0
+[  304.570816]  ? _swap_info_get+0x12/0x50
+[  304.570860]  unmap_page_range+0x5ca/0x980
+[  304.570863]  unmap_single_vma+0x7d/0xe0
+[  304.570865]  unmap_vmas+0x51/0xa0
+[  304.570868]  exit_mmap+0xa7/0x170
+[  304.570870]  mmput+0x66/0x150
+[  304.570872]  do_exit+0x28f/0xba0
+[  304.570874]  rewind_stack_do_exit+0x17/0x20
+[  304.570876] RIP: 0033:0x7f6f5a394f60
+[  304.570877] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570879] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570881] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570882] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570883] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570884] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570887] swap_info_get: Bad swap file entry 100000000001d40f
+[  304.570889] BUG: Bad page map in process sudo  pte:7503d000 pmd:5fb68067
+[  304.570891] addr:00007f6f5b9f1000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:5
+[  304.570895] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570897] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570897] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570898] Call Trace:
+[  304.570899]  dump_stack+0x63/0x86
+[  304.570901]  print_bad_pte+0x1df/0x2b0
+[  304.570902]  ? __swap_info_get+0x91/0xa0
+[  304.570903]  ? _swap_info_get+0x12/0x50
+[  304.570905]  unmap_page_range+0x5ca/0x980
+[  304.570907]  unmap_single_vma+0x7d/0xe0
+[  304.570909]  unmap_vmas+0x51/0xa0
+[  304.570910]  exit_mmap+0xa7/0x170
+[  304.570912]  mmput+0x66/0x150
+[  304.570914]  do_exit+0x28f/0xba0
+[  304.570916]  rewind_stack_do_exit+0x17/0x20
+[  304.570917] RIP: 0033:0x7f6f5a394f60
+[  304.570918] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570919] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570920] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570920] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570921] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570922] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570924] swap_info_get: Unused swap offset entry 0001d40f
+[  304.570925] BUG: Bad page map in process sudo  pte:7503c000 pmd:5fb68067
+[  304.570926] addr:00007f6f5b9f2000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:6
+[  304.570928] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570930] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570930] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570932] Call Trace:
+[  304.570933]  dump_stack+0x63/0x86
+[  304.570934]  print_bad_pte+0x1df/0x2b0
+[  304.570936]  ? _swap_info_get+0x47/0x50
+[  304.570937]  unmap_page_range+0x5ca/0x980
+[  304.570939]  unmap_single_vma+0x7d/0xe0
+[  304.570941]  unmap_vmas+0x51/0xa0
+[  304.570942]  exit_mmap+0xa7/0x170
+[  304.570944]  mmput+0x66/0x150
+[  304.570946]  do_exit+0x28f/0xba0
+[  304.570948]  rewind_stack_do_exit+0x17/0x20
+[  304.570949] RIP: 0033:0x7f6f5a394f60
+[  304.570950] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570951] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570952] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570952] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570953] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570954] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.570955] swap_info_get: Bad swap file entry 300000000001d40e
+[  304.570956] BUG: Bad page map in process sudo  pte:7503b000 pmd:5fb68067
+[  304.570958] addr:00007f6f5b9f3000 vm_flags:08000075 anon_vma:          (null) mapping:ffff9c8c785e9fe8 index:7
+[  304.570960] file:libnss_sss.so.2 fault:ext4_filemap_fault mmap:ext4_file_mmap readpage:ext4_readpage
+[  304.570962] CPU: 1 PID: 2685 Comm: sudo Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  304.570962] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  304.570963] Call Trace:
+[  304.570964]  dump_stack+0x63/0x86
+[  304.570966]  print_bad_pte+0x1df/0x2b0
+[  304.570967]  ? __swap_info_get+0x91/0xa0
+[  304.570968]  ? _swap_info_get+0x12/0x50
+[  304.570970]  unmap_page_range+0x5ca/0x980
+[  304.570972]  unmap_single_vma+0x7d/0xe0
+[  304.570974]  unmap_vmas+0x51/0xa0
+[  304.570975]  exit_mmap+0xa7/0x170
+[  304.570977]  mmput+0x66/0x150
+[  304.570978]  do_exit+0x28f/0xba0
+[  304.570980]  rewind_stack_do_exit+0x17/0x20
+[  304.570981] RIP: 0033:0x7f6f5a394f60
+[  304.570982] RSP: 002b:00007fff656c0468 EFLAGS: 00010206
+[  304.570983] RAX: 00007f6f5a394f60 RBX: 0000000000000000 RCX: 00000069d31e5b40
+[  304.570984] RDX: 0000000000000001 RSI: 0000000000008000 RDI: 00000069d31db940
+[  304.570985] RBP: 00000069d31e7160 R08: 0000000000000000 R09: 0000000000000006
+[  304.570985] R10: 00000069d31e7160 R11: 0000000000000000 R12: 0000000000000000
+[  304.570986] R13: 0000000000000000 R14: 00000069d31db940 R15: 0000000000000000
+[  304.571668] BUG: Bad rss-counter state mm:ffff9c8c368a0000 idx:0 val:10
+[  304.571670] BUG: Bad rss-counter state mm:ffff9c8c368a0000 idx:1 val:3
+[  304.571671] BUG: Bad rss-counter state mm:ffff9c8c368a0000 idx:2 val:-13
+[  307.573753] BUG: unable to handle kernel paging request at 000004c000000308
+[  307.574430] IP: __radix_tree_lookup+0x10/0xf0
+[  307.574951] PGD 0 
+
+[  307.575859] Oops: 0000 [#3] SMP
+[  307.576270] Modules linked in: step6(OE) fuse ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ip_set nfnetlink ebtable_broute bridge stp llc ebtable_nat ip6table_raw ip6table_mangle ip6table_security ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 iptable_raw iptable_mangle iptable_security iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack libcrc32c ebtable_filter ebtables ip6table_filter ip6_tables vboxsf(OE) sunrpc snd_intel8x0 snd_ac97_codec ac97_bus crct10dif_pclmul crc32_pclmul ppdev ghash_clmulni_intel snd_seq intel_rapl_perf snd_seq_device snd_pcm vboxvideo(OE) joydev vboxguest(OE) snd_timer parport_pc ttm snd drm_kms_helper parport soundcore drm video i2c_piix4 tpm_tis tpm_tis_core tpm e1000 crc32c_intel serio_raw ata_generic pata_acpi
+[  307.579747] CPU: 1 PID: 1968 Comm: fish Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  307.580132] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  307.580524] task: ffff9c8c5f814b00 task.stack: ffffb115008bc000
+[  307.581068] RIP: 0010:__radix_tree_lookup+0x10/0xf0
+[  307.581493] RSP: 0000:ffffb115008bfcb0 EFLAGS: 00010246
+[  307.582069] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffb115008bfcd0
+[  307.582632] RDX: 0000000000000000 RSI: 0002000000016e07 RDI: 000004c000000300
+[  307.583116] RBP: ffffb115008bfcc0 R08: 0000009c98266fc0 R09: ffffb115008bfcd0
+[  307.583614] R10: 0000000000000040 R11: 00007f5e222f7fd0 R12: 000004c000000300
+[  307.584035] R13: 0002000000016e07 R14: 0002000000016e07 R15: ffff9c8c5f822180
+[  307.584825] FS:  00007f5e2385a6c0(0000) GS:ffff9c8c7fd00000(0000) knlGS:0000000000000000
+[  307.585665] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  307.586508] CR2: 000004c000000308 CR3: 000000005f98a000 CR4: 00000000000406e0
+[  307.587369] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[  307.588142] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[  307.588786] Call Trace:
+[  307.589358]  radix_tree_lookup_slot+0x22/0x50
+[  307.589955]  find_get_entry+0x20/0x180
+[  307.590535]  pagecache_get_page+0x2c/0x310
+[  307.591104]  lookup_swap_cache+0x3e/0x70
+[  307.591658]  do_swap_page+0x95/0x7c0
+[  307.592221]  ? n_tty_ioctl_helper+0x29/0x120
+[  307.592757]  __handle_mm_fault+0x69a/0x1080
+[  307.593285]  ? tty_ioctl+0x45b/0xc40
+[  307.593809]  handle_mm_fault+0xd3/0x240
+[  307.594221]  __do_page_fault+0x23e/0x4e0
+[  307.594637]  do_page_fault+0x30/0x80
+[  307.595025]  page_fault+0x28/0x30
+[  307.595413] RIP: 0033:0x9c97fd0188
+[  307.595789] RSP: 002b:00007ffcd8012130 EFLAGS: 00010212
+[  307.596183] RAX: 0000009c98266f88 RBX: 00007ffcd80121a0 RCX: 0000009c98266f60
+[  307.596571] RDX: 00007f5e14001500 RSI: 0000009c9920ccf0 RDI: 0000009c99219520
+[  307.596928] RBP: 00007ffcd8012270 R08: 0000009c98266fc0 R09: 0000009c991f3170
+[  307.597275] R10: 0000009c99219520 R11: 00007f5e222f7fd0 R12: 0000009c98266f40
+[  307.597612] R13: 00007ffcd8012530 R14: 00007ffcd8012298 R15: 0000009c9920f930
+[  307.597938] Code: 27 e9 22 ff ff ff 89 d8 e9 37 fe ff ff 0f 1f 40 00 66 2e 0f 1f 84 00 00 00 00 00 55 49 89 c9 41 ba 40 00 00 00 48 89 e5 41 54 53 <48> 8b 5f 08 48 89 d8 83 e0 03 48 83 f8 01 0f 85 b3 00 00 00 48 
+[  307.598923] RIP: __radix_tree_lookup+0x10/0xf0 RSP: ffffb115008bfcb0
+[  307.599245] CR2: 000004c000000308
+[  307.599629] ---[ end trace c563ccc714b9493b ]---
+[  307.600525] swap_info_get: Bad swap file entry 2802000000016b2d
+[  307.600528] BUG: Bad page map in process fish  pte:800000005acb6800 pmd:5fb6a067
+[  307.600530] addr:00007f5e14000000 vm_flags:08200073 anon_vma:ffff9c8c5fbbb1e0 mapping:          (null) index:7f5e14000
+[  307.600531] file:          (null) fault:          (null) mmap:          (null) readpage:          (null)
+[  307.600534] CPU: 0 PID: 1968 Comm: fish Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  307.600535] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  307.600536] Call Trace:
+[  307.600539]  dump_stack+0x63/0x86
+[  307.600542]  print_bad_pte+0x1df/0x2b0
+[  307.600545]  ? __swap_info_get+0x91/0xa0
+[  307.600546]  ? _swap_info_get+0x12/0x50
+[  307.600548]  unmap_page_range+0x5ca/0x980
+[  307.600550]  unmap_single_vma+0x7d/0xe0
+[  307.600552]  unmap_vmas+0x51/0xa0
+[  307.600554]  exit_mmap+0xa7/0x170
+[  307.600556]  mmput+0x66/0x150
+[  307.600558]  do_exit+0x28f/0xba0
+[  307.600561]  rewind_stack_do_exit+0x17/0x20
+[  307.600562] RIP: 0033:0x9c97fd0188
+[  307.600563] RSP: 002b:00007ffcd8012130 EFLAGS: 00010212
+[  307.600565] RAX: 0000009c98266f88 RBX: 00007ffcd80121a0 RCX: 0000009c98266f60
+[  307.600566] RDX: 00007f5e14001500 RSI: 0000009c9920ccf0 RDI: 0000009c99219520
+[  307.600567] RBP: 00007ffcd8012270 R08: 0000009c98266fc0 R09: 0000009c991f3170
+[  307.600567] R10: 0000009c99219520 R11: 00007f5e222f7fd0 R12: 0000009c98266f40
+[  307.600568] R13: 00007ffcd8012530 R14: 00007ffcd8012298 R15: 0000009c9920f930
+[  307.600570] swap_info_get: Bad swap file entry 1802000000016e07
+[  307.600571] BUG: Bad page map in process fish  pte:800000005b81d800 pmd:5fb6a067
+[  307.600572] addr:00007f5e14001000 vm_flags:08200073 anon_vma:ffff9c8c5fbbb1e0 mapping:          (null) index:7f5e14001
+[  307.600574] file:          (null) fault:          (null) mmap:          (null) readpage:          (null)
+[  307.600575] CPU: 0 PID: 1968 Comm: fish Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  307.600576] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  307.600577] Call Trace:
+[  307.600578]  dump_stack+0x63/0x86
+[  307.600580]  print_bad_pte+0x1df/0x2b0
+[  307.600581]  ? __swap_info_get+0x91/0xa0
+[  307.600582]  ? _swap_info_get+0x12/0x50
+[  307.600584]  unmap_page_range+0x5ca/0x980
+[  307.600586]  unmap_single_vma+0x7d/0xe0
+[  307.600588]  unmap_vmas+0x51/0xa0
+[  307.600589]  exit_mmap+0xa7/0x170
+[  307.600591]  mmput+0x66/0x150
+[  307.600592]  do_exit+0x28f/0xba0
+[  307.600594]  rewind_stack_do_exit+0x17/0x20
+[  307.600595] RIP: 0033:0x9c97fd0188
+[  307.600596] RSP: 002b:00007ffcd8012130 EFLAGS: 00010212
+[  307.600598] RAX: 0000009c98266f88 RBX: 00007ffcd80121a0 RCX: 0000009c98266f60
+[  307.600598] RDX: 00007f5e14001500 RSI: 0000009c9920ccf0 RDI: 0000009c99219520
+[  307.600599] RBP: 00007ffcd8012270 R08: 0000009c98266fc0 R09: 0000009c991f3170
+[  307.600600] R10: 0000009c99219520 R11: 00007f5e222f7fd0 R12: 0000009c98266f40
+[  307.600601] R13: 00007ffcd8012530 R14: 00007ffcd8012298 R15: 0000009c9920f930
+[  307.600603] swap_info_get: Bad swap file entry 3802000000016b3d
+[  307.600604] BUG: Bad page map in process fish  pte:800000005acf7800 pmd:5fb6a067
+[  307.600605] addr:00007f5e14002000 vm_flags:08200073 anon_vma:ffff9c8c5fbbb1e0 mapping:          (null) index:7f5e14002
+[  307.600606] file:          (null) fault:          (null) mmap:          (null) readpage:          (null)
+[  307.600607] CPU: 0 PID: 1968 Comm: fish Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  307.600609] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  307.600610] Call Trace:
+[  307.600611]  dump_stack+0x63/0x86
+[  307.600613]  print_bad_pte+0x1df/0x2b0
+[  307.600614]  ? __swap_info_get+0x91/0xa0
+[  307.600615]  ? _swap_info_get+0x12/0x50
+[  307.600617]  unmap_page_range+0x5ca/0x980
+[  307.600619]  unmap_single_vma+0x7d/0xe0
+[  307.600621]  unmap_vmas+0x51/0xa0
+[  307.600622]  exit_mmap+0xa7/0x170
+[  307.600623]  mmput+0x66/0x150
+[  307.600625]  do_exit+0x28f/0xba0
+[  307.600627]  rewind_stack_do_exit+0x17/0x20
+[  307.600628] RIP: 0033:0x9c97fd0188
+[  307.600629] RSP: 002b:00007ffcd8012130 EFLAGS: 00010212
+[  307.600630] RAX: 0000009c98266f88 RBX: 00007ffcd80121a0 RCX: 0000009c98266f60
+[  307.600631] RDX: 00007f5e14001500 RSI: 0000009c9920ccf0 RDI: 0000009c99219520
+[  307.600631] RBP: 00007ffcd8012270 R08: 0000009c98266fc0 R09: 0000009c991f3170
+[  307.600632] R10: 0000009c99219520 R11: 00007f5e222f7fd0 R12: 0000009c98266f40
+[  307.600633] R13: 00007ffcd8012530 R14: 00007ffcd8012298 R15: 0000009c9920f930
+[  307.600635] swap_info_get: Bad swap file entry 80200000001469d
+[  307.600636] BUG: Bad page map in process fish  pte:8000000051a74800 pmd:5fb6a067
+[  307.600637] addr:00007f5e14009000 vm_flags:08200073 anon_vma:ffff9c8c5fbbb1e0 mapping:          (null) index:7f5e14009
+[  307.600638] file:          (null) fault:          (null) mmap:          (null) readpage:          (null)
+[  307.600639] CPU: 0 PID: 1968 Comm: fish Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[  307.600640] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  307.600641] Call Trace:
+[  307.600642]  dump_stack+0x63/0x86
+[  307.600644]  print_bad_pte+0x1df/0x2b0
+[  307.600645]  ? __swap_info_get+0x91/0xa0
+[  307.600646]  ? _swap_info_get+0x12/0x50
+[  307.600648]  unmap_page_range+0x5ca/0x980
+[  307.600650]  unmap_single_vma+0x7d/0xe0
+[  307.600652]  unmap_vmas+0x51/0xa0
+[  307.600653]  exit_mmap+0xa7/0x170
+[  307.600655]  mmput+0x66/0x150
+[  307.600657]  do_exit+0x28f/0xba0
+[  307.600659]  rewind_stack_do_exit+0x17/0x20
+[  307.600660] RIP: 0033:0x9c97fd0188
+[  307.600661] RSP: 002b:00007ffcd8012130 EFLAGS: 00010212
+[  307.600662] RAX: 0000009c98266f88 RBX: 00007ffcd80121a0 RCX: 0000009c98266f60
+[  307.600663] RDX: 00007f5e14001500 RSI: 0000009c9920ccf0 RDI: 0000009c99219520
+[  307.600664] RBP: 00007ffcd8012270 R08: 0000009c98266fc0 R09: 0000009c991f3170
+[  307.600664] R10: 0000009c99219520 R11: 00007f5e222f7fd0 R12: 0000009c98266f40
+[  307.600665] R13: 00007ffcd8012530 R14: 00007ffcd8012298 R15: 0000009c9920f930
+[  307.600890] BUG: Bad rss-counter state mm:ffff9c8c795c3e00 idx:1 val:4
+[  307.600891] BUG: Bad rss-counter state mm:ffff9c8c795c3e00 idx:2 val:-4
+[  385.647273] e1000: enp0s3 NIC Link is Down
+[  389.737916] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[  393.832601] e1000: enp0s3 NIC Link is Down
+[  397.927483] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[  631.259310] e1000: enp0s3 NIC Link is Down
+[  635.766816] hrtimer: interrupt took 4531385 ns
+[  637.404903] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[  686.557742] e1000: enp0s3 NIC Link is Down
+[  690.650981] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 1512.326607] e1000: enp0s3 NIC Link is Down
+[ 1516.420679] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 1536.909754] e1000: enp0s3 NIC Link is Down
+[ 1541.007528] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 1824.566487] e1000: enp0s3 NIC Link is Down
+[ 1828.662227] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 1830.710075] e1000: enp0s3 NIC Link is Down
+[ 1834.806358] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 2937.266251] e1000: enp0s3 NIC Link is Down
+[ 2941.364486] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 2946.724481] context_struct_compute_av: 3 callbacks suppressed
+[ 2946.724486] SELinux:  Invalid class 0
+[ 2946.724507] ------------[ cut here ]------------
+[ 2946.725136] kernel BUG at security/selinux/avc.c:119!
+[ 2946.725719] invalid opcode: 0000 [#4] SMP
+[ 2946.726244] Modules linked in: step6(OE) fuse ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ip_set nfnetlink ebtable_broute bridge stp llc ebtable_nat ip6table_raw ip6table_mangle ip6table_security ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 iptable_raw iptable_mangle iptable_security iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack libcrc32c ebtable_filter ebtables ip6table_filter ip6_tables vboxsf(OE) sunrpc snd_intel8x0 snd_ac97_codec ac97_bus crct10dif_pclmul crc32_pclmul ppdev ghash_clmulni_intel snd_seq intel_rapl_perf snd_seq_device snd_pcm vboxvideo(OE) joydev vboxguest(OE) snd_timer parport_pc ttm snd drm_kms_helper parport soundcore drm video i2c_piix4 tpm_tis tpm_tis_core tpm e1000 crc32c_intel serio_raw ata_generic pata_acpi
+[ 2946.730175] CPU: 1 PID: 3471 Comm: updatedb Tainted: G    B D    OE   4.11.12-200.fc25.x86_64 #1
+[ 2946.730957] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[ 2946.731777] task: ffff9c8c7c8a2580 task.stack: ffffb11500760000
+[ 2946.732533] RIP: 0010:avc_audit_pre_callback+0x11b/0x120
+[ 2946.733123] RSP: 0018:ffffb11500763bd8 EFLAGS: 00010286
+[ 2946.733563] RAX: 0000000000000000 RBX: ffffb11500763da0 RCX: 0000000000000000
+[ 2946.734011] RDX: 00000000ffffffff RSI: 000000000000000d RDI: ffff9c8c64f8d400
+[ 2946.734518] RBP: ffffb11500763c00 R08: ffffffff9cc88cd0 R09: ffff9c8c7a33dec0
+[ 2946.735037] R10: ffffb11500763c98 R11: ffff9c8c7a33d828 R12: ffff9c8c7b2cf700
+[ 2946.735464] R13: ffffffff9c390680 R14: 0000000000000010 R15: 0000000000000010
+[ 2946.735895] FS:  00007fb8805dc700(0000) GS:ffff9c8c7fd00000(0000) knlGS:0000000000000000
+[ 2946.736336] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 2946.736779] CR2: 00007f655421d000 CR3: 000000007ac4d000 CR4: 00000000000406e0
+[ 2946.737234] DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
+[ 2946.737687] DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
+[ 2946.738187] Call Trace:
+[ 2946.738901]  ? avc_audit_post_callback+0x170/0x170
+[ 2946.739865]  ? lsm_read+0x50/0x50
+[ 2946.740528]  common_lsm_audit+0x7f/0x730
+[ 2946.741357]  ? kmem_cache_alloc+0x195/0x1b0
+[ 2946.742221]  ? avc_alloc_node+0x27/0x120
+[ 2946.743065]  slow_avc_audit+0x6a/0xa0
+[ 2946.743964]  ? slow_avc_audit+0x6a/0xa0
+[ 2946.744772]  avc_has_perm+0x161/0x190
+[ 2946.745560]  selinux_inode_getattr+0x80/0xb0
+[ 2946.746416]  ? mpi_resize+0x81/0x90
+[ 2946.747316]  security_inode_getattr+0x41/0x60
+[ 2946.748095]  vfs_getattr+0x21/0x40
+[ 2946.748974]  vfs_statx+0x8d/0xe0
+[ 2946.749723]  SYSC_newlstat+0x3d/0x70
+[ 2946.750443]  ? mntput+0x24/0x40
+[ 2946.751139]  ? SyS_poll+0x71/0x130
+[ 2946.751803]  ? SyS_poll+0x71/0x130
+[ 2946.752345]  SyS_newlstat+0xe/0x10
+[ 2946.752780]  entry_SYSCALL_64_fastpath+0x1a/0xa9
+[ 2946.753188] RIP: 0033:0x7fb8801014a5
+[ 2946.753580] RSP: 002b:00007ffc75663298 EFLAGS: 00000246 ORIG_RAX: 0000000000000006
+[ 2946.753976] RAX: ffffffffffffffda RBX: 000000bb9aa77a90 RCX: 00007fb8801014a5
+[ 2946.754365] RDX: 00007ffc75663310 RSI: 00007ffc75663310 RDI: 000000bb9aa63469
+[ 2946.754835] RBP: 000000bb9aa63609 R08: 0000000000000075 R09: 0000000000000075
+[ 2946.755221] R10: 0000000000000001 R11: 0000000000000246 R12: 0000000000000044
+[ 2946.755600] R13: 000000bb9aa4d2d0 R14: 0000000000000003 R15: 00007ffc75663300
+[ 2946.755974] Code: 41 5e 41 5f 5d c3 48 c7 c6 ea 8c c8 9c 4c 89 e7 e8 bb 01 dc ff eb d5 44 89 f2 48 c7 c6 73 40 c5 9c 4c 89 e7 e8 a7 01 dc ff eb b2 <0f> 0b 0f 1f 00 0f 1f 44 00 00 55 48 8b 47 28 48 8b 57 30 48 89 
+[ 2946.757168] RIP: avc_audit_pre_callback+0x11b/0x120 RSP: ffffb11500763bd8
+[ 2946.757730] ---[ end trace c563ccc714b9493c ]---
+[ 3033.568532] e1000: enp0s3 NIC Link is Down
+[ 3039.716427] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 4020.993640] e1000: enp0s3 NIC Link is Down
+[ 4027.139864] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 4418.384503] e1000: enp0s3 NIC Link is Down
+[ 4418.384870] e1000 0000:00:03.0 enp0s3: Reset adapter
+[ 4420.432094] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
