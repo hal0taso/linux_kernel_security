@@ -1,10 +1,9 @@
 /*
   allocating memory dinamicaly by using kmalloc.
 
-  kmalloc(8192, GFP_ATOMIC);
-  --> stack trace出てきた。
-      kerneloopsが発行している？ --> NULL pointer dereferenceが発生していた。
-                                 
+  kmalloc(8192);
+  --> slabinfo 見ると4つまでallocateできそう -> 32個allocateできた
+  kmalloc(4096); --> いける
 */
 
 #include <linux/module.h>
@@ -13,34 +12,38 @@
 
 MODULE_LICENSE("GPL v2");
 
-#define PAGESIZE 4096 * 2
+#define PAGESIZE 8192
 
 void mset(char *buf, size_t size)
 {
   int i;
-  for(i = 0; i < size; i ++){
-    *buf = 0UL;
-    buf += sizeof(unsigned long);
+  for(i = 0; i < size/sizeof(unsigned long long int); i ++){
+    *buf = 0ULL;
+    buf += sizeof(unsigned long long int);
   }
 }
 
 int step6_init(void)
 {
   int size = PAGESIZE;
-  void *ptr[0x100];
-
+  void *ptr;
+  unsigned long long int a_ptr[32];
+  int i;
   
   printk(KERN_ALERT "step6 LOAD\n");
-  
-  ptr[0] = kmalloc(size, GFP_ATOMIC);
-  if(ptr[0] == NULL){
-    printk("break\n");
-
+  for(i = 0; i < 32; i ++){
+    a_ptr[i] = (unsigned long long int)kmalloc(size, GFP_ATOMIC);
+    if(a_ptr[i] == 0){
+      printk("break\n");
+      break;
+    }
+    mset((void *)a_ptr[i], size);
+    printk("[%p] %d byte memory allocated.\n", (void *)a_ptr[i], size);       
   }
-  mset(ptr[0], size);
-  printk("[%p] %d byte memory allocated.\n", ptr[0], size);      
-  kfree(ptr[0]);  
-    
+
+  for(i = 0; i < 32; i ++){
+    kfree((void *)a_ptr[i]);  
+  }
   return 0;
 }
 
