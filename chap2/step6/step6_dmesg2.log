@@ -1,0 +1,13 @@
+[  988.455487] step6 LOAD
+[  988.455491] [ffff95194f8e4000] 4096 byte memory allocated.
+[  988.455492] [ffff9519798aa000] 8192 byte memory allocated.
+[  988.455493] [ffff95195e2b4000] 16384 byte memory allocated.
+[  988.455495] [ffff95194f838000] 32768 byte memory allocated.
+[  988.455496] [ffff95194f870000] 65536 byte memory allocated.
+[  988.455497] [ffff95194f9c0000] 131072 byte memory allocated.
+[  988.455499] [ffff95194f980000] 262144 byte memory allocated.
+[  988.455501] [ffff95194fa00000] 524288 byte memory allocated.
+[  988.455504] [ffff95194fa00000] 1048576 byte memory allocated.
+[  988.455508] [ffff95194fa00000] 2097152 byte memory allocated.
+[  988.455519] [ffff951940400000] 4194304 byte memory allocated.
+[  988.455524] break
