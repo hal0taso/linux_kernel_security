@@ -45,7 +45,7 @@ int main(int argc, char **argv)
   unsigned int sigs = 0;
   long double  mb;
   unsigned int num_vir = 0;
-  unsigned int num_no_vir = 0;
+  unsigned int num_file = 0;
   
   const char *virname;
   struct cl_engine *engine;
@@ -91,17 +91,16 @@ int main(int argc, char **argv)
     if ((fd = open(argv[i], O_RDONLY)) == -1) {
       printf("[!] Can't open file %s\n", argv[i]);
       cl_engine_free(engine);
-      return 2;
     }
+    num_file ++;
     printf("[*] scannning: %s\n", argv[i]);
     
     if((ret = cl_scandesc(fd, &virname, &size, engine, CL_SCAN_STDOPT)) == CL_VIRUS) {
-      printf("\tVirus detected: %s", virname);
+      printf(" Virus detected: %s\n", virname);
       num_vir ++;
     } else {
       if(ret == CL_CLEAN) {
-	    printf("\tNo virus detected.");
-        num_no_vir ++;
+	    printf(" No virus detected.\n");
       } else {
 	    printf("[!] Error: %s\n", cl_strerror(ret));
 	    cl_engine_free(engine);
@@ -109,8 +108,6 @@ int main(int argc, char **argv)
 	    return 2;
       }
     }
-
-    printf("\tSize : %lu Bytes\n", size);
     total_size += (unsigned long long int)size;
     close(fd);
     
@@ -120,9 +117,12 @@ int main(int argc, char **argv)
   cl_engine_free(engine);
   
   /* calculate size of scanned data */
-  mb = total_size * (CL_COUNT_PRECISION / 1024) / 1024.0;    
-  printf("[*] Total data scanned: %2.2Lf MB\n", mb);
-  printf("[*] Virus: %u\tNot Virus: %u\n", num_vir, num_no_vir);
+  mb = total_size * (CL_COUNT_PRECISION / 1024) / 1024.0;
+  printf("----------- SCAN SUMMARY -----------\n");
+  printf("Known virues %u\n", sigs);
+  printf("Scaned files: %u\n", num_file);
+  printf("Infected files: %u\n", num_vir);
+  printf("Data scanned: %2.2Lf MB\n", mb);
   return ret == CL_VIRUS ? 1 : 0;
   
 }
