@@ -90,7 +90,7 @@ int main(int argc, char **argv)
     
     if ((fd = open(argv[i], O_RDONLY)) == -1) {
       printf("[!] Can't open file %s\n", argv[i]);
-      cl_engine_free(engine);
+      continue;
     }
     num_file ++;
     printf("[*] scannning: %s\n", argv[i]);
@@ -103,7 +103,6 @@ int main(int argc, char **argv)
 	    printf(" No virus detected.\n");
       } else {
 	    printf("[!] Error: %s\n", cl_strerror(ret));
-	    cl_engine_free(engine);
 	    close(fd);
 	    return 2;
       }
