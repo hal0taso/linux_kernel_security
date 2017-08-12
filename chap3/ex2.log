@@ -1,0 +1,107 @@
+[*] Loading all available database
+[*] Loaded 6302820 signatures.
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.7z
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.arj
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-aspack.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.bin-be.cpio
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.bin-le.cpio
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.bz2.zip
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.cab
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam_cache_emax.tgz
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.chm
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.d64.zip
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.ea05.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.ea06.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.binhex
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.bz2
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.html
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.mbox.base64
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.mbox.uu
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.rtf
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.exe.szdd
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-fsg.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.impl.zip
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam_IScab_ext.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam_IScab_int.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam_ISmsi_ext.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam_ISmsi_int.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.iso
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clamjol.iso
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.mail
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-mew.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.newc.cpio
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-nsis.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.odc.cpio
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.ole.doc
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.pdf
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-pespin.exe
+ Virus detected: Win.Trojan.Sality-90234
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-petite.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.ppt
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.sis
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.tar.gz
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.tnef
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-upack.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-upx.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-wwpack.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam-yc.exe
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/clam.zip
+ Virus detected: Clamav.Test.File-6
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/Makefile
+ No virus detected.
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/Makefile.am
+ No virus detected.
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/Makefile.in
+ No virus detected.
+[*] scannning: /root/rpmbuild/BUILD/clamav-0.99.2/test/README
+ No virus detected.
+----------- SCAN SUMMARY -----------
+Known virues 6302820
+Scaned files: 50
+Infected files: 46
+Data scanned: 14.52 MB
